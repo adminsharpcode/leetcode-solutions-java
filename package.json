@@ -1,0 +1,24 @@
+{
+  "name": "leetcode-solutions-java",
+  "version": "1.0.0",
+  "description": "A curated collection of **47 comprehensive, production-grade Java solutions** to top LeetCode algorithm and data structure problems. Each solution includes problem statement links, approach breakdowns, Big-O time and space complexity analyses, and self-contained executable `main()` test cases.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adminsharpcode/leetcode-solutions-java.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/adminsharpcode/leetcode-solutions-java/issues"
+  },
+  "homepage": "https://github.com/adminsharpcode/leetcode-solutions-java#readme",
+  "dependencies": {
+    "playwright": "^1.64.1"
+  }
+}

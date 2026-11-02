@@ -1,0 +1,7 @@
+# Compiled Java classes
+*.class
+
+# Node / Playwright
+node_modules/
+.playwright_session/
+package-lock.json

@@ -4,4 +4,6 @@
 # Node / Playwright
 node_modules/
 .playwright_session/
+.leetcode_storage.json
 package-lock.json
+*.png

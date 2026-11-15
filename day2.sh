@@ -12,62 +12,91 @@ echo "================================================================"
 echo "🚀 Executing Day 2 Submissions (6 Problems in Java)"
 echo "================================================================"
 
-# Ensure we have git configured
 if ! command -v git &> /dev/null; then
     echo "[-] Git is not installed. In Termux, run: pkg install git"
     exit 1
 fi
 
-# Pull latest commits cleanly
 echo "[*] Syncing with remote repository..."
 git pull --rebase origin main || true
 
-# [1/6] LC0024_SwapNodesInPairs.java
-echo "[*] Committing [1/6]: LC0024 Swap Nodes in Pairs..."
-cp "staging/day2/LC0024_SwapNodesInPairs.java" "./LC0024_SwapNodesInPairs.java"
-git add "LC0024_SwapNodesInPairs.java"
-git commit -m "feat(leetcode): solve LC0024 Swap Nodes in Pairs in Java"
-sleep 2
+# [1/6] LC0082_RemoveDuplicatesFromSortedListII.java
+echo "[*] Processing [1/6]: LC0082 Remove Duplicates from Sorted List II..."
+if [ -f "./LC0082_RemoveDuplicatesFromSortedListII.java" ] && git ls-files --error-unmatch "./LC0082_RemoveDuplicatesFromSortedListII.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0082_RemoveDuplicatesFromSortedListII.java"; then
+    echo "    [✓] LC0082_RemoveDuplicatesFromSortedListII.java is already committed in git repository."
+else
+    cp "staging/day2/LC0082_RemoveDuplicatesFromSortedListII.java" "./LC0082_RemoveDuplicatesFromSortedListII.java"
+    git add "LC0082_RemoveDuplicatesFromSortedListII.java"
+    git commit -m "feat(leetcode): solve LC0082 Remove Duplicates from Sorted List II in Java"
+    echo "    [+] Committed [1/6]: LC0082 Remove Duplicates from Sorted List II"
+    sleep 2
+fi
 
-# [2/6] LC0061_RotateList.java
-echo "[*] Committing [2/6]: LC0061 Rotate List..."
-cp "staging/day2/LC0061_RotateList.java" "./LC0061_RotateList.java"
-git add "LC0061_RotateList.java"
-git commit -m "feat(leetcode): solve LC0061 Rotate List in Java"
-sleep 2
+# [2/6] LC0083_RemoveDuplicatesFromSortedList.java
+echo "[*] Processing [2/6]: LC0083 Remove Duplicates from Sorted List..."
+if [ -f "./LC0083_RemoveDuplicatesFromSortedList.java" ] && git ls-files --error-unmatch "./LC0083_RemoveDuplicatesFromSortedList.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0083_RemoveDuplicatesFromSortedList.java"; then
+    echo "    [✓] LC0083_RemoveDuplicatesFromSortedList.java is already committed in git repository."
+else
+    cp "staging/day2/LC0083_RemoveDuplicatesFromSortedList.java" "./LC0083_RemoveDuplicatesFromSortedList.java"
+    git add "LC0083_RemoveDuplicatesFromSortedList.java"
+    git commit -m "feat(leetcode): solve LC0083 Remove Duplicates from Sorted List in Java"
+    echo "    [+] Committed [2/6]: LC0083 Remove Duplicates from Sorted List"
+    sleep 2
+fi
 
-# [3/6] LC0141_LinkedListCycle.java
-echo "[*] Committing [3/6]: LC0141 Linked List Cycle..."
-cp "staging/day2/LC0141_LinkedListCycle.java" "./LC0141_LinkedListCycle.java"
-git add "LC0141_LinkedListCycle.java"
-git commit -m "feat(leetcode): solve LC0141 Linked List Cycle in Java"
-sleep 2
+# [3/6] LC0086_PartitionList.java
+echo "[*] Processing [3/6]: LC0086 Partition List..."
+if [ -f "./LC0086_PartitionList.java" ] && git ls-files --error-unmatch "./LC0086_PartitionList.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0086_PartitionList.java"; then
+    echo "    [✓] LC0086_PartitionList.java is already committed in git repository."
+else
+    cp "staging/day2/LC0086_PartitionList.java" "./LC0086_PartitionList.java"
+    git add "LC0086_PartitionList.java"
+    git commit -m "feat(leetcode): solve LC0086 Partition List in Java"
+    echo "    [+] Committed [3/6]: LC0086 Partition List"
+    sleep 2
+fi
 
-# [4/6] LC0142_LinkedListCycleII.java
-echo "[*] Committing [4/6]: LC0142 Linked List Cycle II..."
-cp "staging/day2/LC0142_LinkedListCycleII.java" "./LC0142_LinkedListCycleII.java"
-git add "LC0142_LinkedListCycleII.java"
-git commit -m "feat(leetcode): solve LC0142 Linked List Cycle II in Java"
-sleep 2
+# [4/6] LC0092_ReverseLinkedListII.java
+echo "[*] Processing [4/6]: LC0092 Reverse Linked List II..."
+if [ -f "./LC0092_ReverseLinkedListII.java" ] && git ls-files --error-unmatch "./LC0092_ReverseLinkedListII.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0092_ReverseLinkedListII.java"; then
+    echo "    [✓] LC0092_ReverseLinkedListII.java is already committed in git repository."
+else
+    cp "staging/day2/LC0092_ReverseLinkedListII.java" "./LC0092_ReverseLinkedListII.java"
+    git add "LC0092_ReverseLinkedListII.java"
+    git commit -m "feat(leetcode): solve LC0092 Reverse Linked List II in Java"
+    echo "    [+] Committed [4/6]: LC0092 Reverse Linked List II"
+    sleep 2
+fi
 
-# [5/6] LC0143_ReorderList.java
-echo "[*] Committing [5/6]: LC0143 Reorder List..."
-cp "staging/day2/LC0143_ReorderList.java" "./LC0143_ReorderList.java"
-git add "LC0143_ReorderList.java"
-git commit -m "feat(leetcode): solve LC0143 Reorder List in Java"
-sleep 2
+# [5/6] LC0160_IntersectionOfTwoLinkedLists.java
+echo "[*] Processing [5/6]: LC0160 Intersection of Two Linked Lists..."
+if [ -f "./LC0160_IntersectionOfTwoLinkedLists.java" ] && git ls-files --error-unmatch "./LC0160_IntersectionOfTwoLinkedLists.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0160_IntersectionOfTwoLinkedLists.java"; then
+    echo "    [✓] LC0160_IntersectionOfTwoLinkedLists.java is already committed in git repository."
+else
+    cp "staging/day2/LC0160_IntersectionOfTwoLinkedLists.java" "./LC0160_IntersectionOfTwoLinkedLists.java"
+    git add "LC0160_IntersectionOfTwoLinkedLists.java"
+    git commit -m "feat(leetcode): solve LC0160 Intersection of Two Linked Lists in Java"
+    echo "    [+] Committed [5/6]: LC0160 Intersection of Two Linked Lists"
+    sleep 2
+fi
 
-# [6/6] LC0234_PalindromeLinkedList.java
-echo "[*] Committing [6/6]: LC0234 Palindrome Linked List..."
-cp "staging/day2/LC0234_PalindromeLinkedList.java" "./LC0234_PalindromeLinkedList.java"
-git add "LC0234_PalindromeLinkedList.java"
-git commit -m "feat(leetcode): solve LC0234 Palindrome Linked List in Java"
-sleep 2
+# [6/6] LC0203_RemoveLinkedListElements.java
+echo "[*] Processing [6/6]: LC0203 Remove Linked List Elements..."
+if [ -f "./LC0203_RemoveLinkedListElements.java" ] && git ls-files --error-unmatch "./LC0203_RemoveLinkedListElements.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0203_RemoveLinkedListElements.java"; then
+    echo "    [✓] LC0203_RemoveLinkedListElements.java is already committed in git repository."
+else
+    cp "staging/day2/LC0203_RemoveLinkedListElements.java" "./LC0203_RemoveLinkedListElements.java"
+    git add "LC0203_RemoveLinkedListElements.java"
+    git commit -m "feat(leetcode): solve LC0203 Remove Linked List Elements in Java"
+    echo "    [+] Committed [6/6]: LC0203 Remove Linked List Elements"
+    sleep 2
+fi
 
-echo "[*] Pushing all 6 commits to GitHub..."
-git push origin main
+echo "================================================================"
+echo "[*] Day 2 commits recorded! Pushing to GitHub..."
+echo "================================================================"
+git push origin main || git push
 
 echo ""
-echo "================================================================"
-echo "✅ Day 2 COMPLETE: 6 new Java solutions pushed to GitHub!"
+echo "🎉 [SUCCESS] Day 2 complete! 6 contributions pushed to GitHub."
 echo "================================================================"

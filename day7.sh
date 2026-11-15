@@ -12,62 +12,91 @@ echo "================================================================"
 echo "🚀 Executing Day 7 Submissions (6 Problems in Java)"
 echo "================================================================"
 
-# Ensure we have git configured
 if ! command -v git &> /dev/null; then
     echo "[-] Git is not installed. In Termux, run: pkg install git"
     exit 1
 fi
 
-# Pull latest commits cleanly
 echo "[*] Syncing with remote repository..."
 git pull --rebase origin main || true
 
-# [1/6] LC0072_EditDistance.java
-echo "[*] Committing [1/6]: LC0072 Edit Distance..."
-cp "staging/day7/LC0072_EditDistance.java" "./LC0072_EditDistance.java"
-git add "LC0072_EditDistance.java"
-git commit -m "feat(leetcode): solve LC0072 Edit Distance in Java"
-sleep 2
+# [1/6] LC0029_DivideTwoIntegers.java
+echo "[*] Processing [1/6]: LC0029 Divide Two Integers..."
+if [ -f "./LC0029_DivideTwoIntegers.java" ] && git ls-files --error-unmatch "./LC0029_DivideTwoIntegers.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0029_DivideTwoIntegers.java"; then
+    echo "    [✓] LC0029_DivideTwoIntegers.java is already committed in git repository."
+else
+    cp "staging/day7/LC0029_DivideTwoIntegers.java" "./LC0029_DivideTwoIntegers.java"
+    git add "LC0029_DivideTwoIntegers.java"
+    git commit -m "feat(leetcode): solve LC0029 Divide Two Integers in Java"
+    echo "    [+] Committed [1/6]: LC0029 Divide Two Integers"
+    sleep 2
+fi
 
-# [2/6] LC0210_CourseScheduleII.java
-echo "[*] Committing [2/6]: LC0210 Course Schedule II..."
-cp "staging/day7/LC0210_CourseScheduleII.java" "./LC0210_CourseScheduleII.java"
-git add "LC0210_CourseScheduleII.java"
-git commit -m "feat(leetcode): solve LC0210 Course Schedule II in Java"
-sleep 2
+# [2/6] LC0077_Combinations.java
+echo "[*] Processing [2/6]: LC0077 Combinations..."
+if [ -f "./LC0077_Combinations.java" ] && git ls-files --error-unmatch "./LC0077_Combinations.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0077_Combinations.java"; then
+    echo "    [✓] LC0077_Combinations.java is already committed in git repository."
+else
+    cp "staging/day7/LC0077_Combinations.java" "./LC0077_Combinations.java"
+    git add "LC0077_Combinations.java"
+    git commit -m "feat(leetcode): solve LC0077 Combinations in Java"
+    echo "    [+] Committed [2/6]: LC0077 Combinations"
+    sleep 2
+fi
 
-# [3/6] LC0322_CoinChange.java
-echo "[*] Committing [3/6]: LC0322 Coin Change..."
-cp "staging/day7/LC0322_CoinChange.java" "./LC0322_CoinChange.java"
-git add "LC0322_CoinChange.java"
-git commit -m "feat(leetcode): solve LC0322 Coin Change in Java"
-sleep 2
+# [3/6] LC0090_SubsetsII.java
+echo "[*] Processing [3/6]: LC0090 Subsets II..."
+if [ -f "./LC0090_SubsetsII.java" ] && git ls-files --error-unmatch "./LC0090_SubsetsII.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0090_SubsetsII.java"; then
+    echo "    [✓] LC0090_SubsetsII.java is already committed in git repository."
+else
+    cp "staging/day7/LC0090_SubsetsII.java" "./LC0090_SubsetsII.java"
+    git add "LC0090_SubsetsII.java"
+    git commit -m "feat(leetcode): solve LC0090 Subsets II in Java"
+    echo "    [+] Committed [3/6]: LC0090 Subsets II"
+    sleep 2
+fi
 
-# [4/6] LC0416_PartitionEqualSubsetSum.java
-echo "[*] Committing [4/6]: LC0416 Partition Equal Subset Sum..."
-cp "staging/day7/LC0416_PartitionEqualSubsetSum.java" "./LC0416_PartitionEqualSubsetSum.java"
-git add "LC0416_PartitionEqualSubsetSum.java"
-git commit -m "feat(leetcode): solve LC0416 Partition Equal Subset Sum in Java"
-sleep 2
+# [4/6] LC0202_HappyNumber.java
+echo "[*] Processing [4/6]: LC0202 Happy Number..."
+if [ -f "./LC0202_HappyNumber.java" ] && git ls-files --error-unmatch "./LC0202_HappyNumber.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0202_HappyNumber.java"; then
+    echo "    [✓] LC0202_HappyNumber.java is already committed in git repository."
+else
+    cp "staging/day7/LC0202_HappyNumber.java" "./LC0202_HappyNumber.java"
+    git add "LC0202_HappyNumber.java"
+    git commit -m "feat(leetcode): solve LC0202 Happy Number in Java"
+    echo "    [+] Committed [4/6]: LC0202 Happy Number"
+    sleep 2
+fi
 
-# [5/6] LC0424_LongestRepeatingCharacterReplacement.java
-echo "[*] Committing [5/6]: LC0424 Longest Repeating Character Replacement..."
-cp "staging/day7/LC0424_LongestRepeatingCharacterReplacement.java" "./LC0424_LongestRepeatingCharacterReplacement.java"
-git add "LC0424_LongestRepeatingCharacterReplacement.java"
-git commit -m "feat(leetcode): solve LC0424 Longest Repeating Character Replacement in Java"
-sleep 2
+# [5/6] LC0242_ValidAnagram.java
+echo "[*] Processing [5/6]: LC0242 Valid Anagram..."
+if [ -f "./LC0242_ValidAnagram.java" ] && git ls-files --error-unmatch "./LC0242_ValidAnagram.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0242_ValidAnagram.java"; then
+    echo "    [✓] LC0242_ValidAnagram.java is already committed in git repository."
+else
+    cp "staging/day7/LC0242_ValidAnagram.java" "./LC0242_ValidAnagram.java"
+    git add "LC0242_ValidAnagram.java"
+    git commit -m "feat(leetcode): solve LC0242 Valid Anagram in Java"
+    echo "    [+] Committed [5/6]: LC0242 Valid Anagram"
+    sleep 2
+fi
 
-# [6/6] LC0435_NonOverlappingIntervals.java
-echo "[*] Committing [6/6]: LC0435 Non-overlapping Intervals..."
-cp "staging/day7/LC0435_NonOverlappingIntervals.java" "./LC0435_NonOverlappingIntervals.java"
-git add "LC0435_NonOverlappingIntervals.java"
-git commit -m "feat(leetcode): solve LC0435 Non-overlapping Intervals in Java"
-sleep 2
+# [6/6] LC0295_FindMedianFromDataStream.java
+echo "[*] Processing [6/6]: LC0295 Find Median from Data Stream..."
+if [ -f "./LC0295_FindMedianFromDataStream.java" ] && git ls-files --error-unmatch "./LC0295_FindMedianFromDataStream.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0295_FindMedianFromDataStream.java"; then
+    echo "    [✓] LC0295_FindMedianFromDataStream.java is already committed in git repository."
+else
+    cp "staging/day7/LC0295_FindMedianFromDataStream.java" "./LC0295_FindMedianFromDataStream.java"
+    git add "LC0295_FindMedianFromDataStream.java"
+    git commit -m "feat(leetcode): solve LC0295 Find Median from Data Stream in Java"
+    echo "    [+] Committed [6/6]: LC0295 Find Median from Data Stream"
+    sleep 2
+fi
 
-echo "[*] Pushing all 6 commits to GitHub..."
-git push origin main
+echo "================================================================"
+echo "[*] Day 7 commits recorded! Pushing to GitHub..."
+echo "================================================================"
+git push origin main || git push
 
 echo ""
-echo "================================================================"
-echo "✅ Day 7 COMPLETE: 6 new Java solutions pushed to GitHub!"
+echo "🎉 [SUCCESS] Day 7 complete! 6 contributions pushed to GitHub."
 echo "================================================================"

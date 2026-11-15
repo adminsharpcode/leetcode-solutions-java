@@ -12,62 +12,91 @@ echo "================================================================"
 echo "🚀 Executing Day 3 Submissions (6 Problems in Java)"
 echo "================================================================"
 
-# Ensure we have git configured
 if ! command -v git &> /dev/null; then
     echo "[-] Git is not installed. In Termux, run: pkg install git"
     exit 1
 fi
 
-# Pull latest commits cleanly
 echo "[*] Syncing with remote repository..."
 git pull --rebase origin main || true
 
-# [1/6] LC0034_FindFirstAndLastPositionOfElementInSortedArray.java
-echo "[*] Committing [1/6]: LC0034 Find First and Last Position of Element in Sorted Array..."
-cp "staging/day3/LC0034_FindFirstAndLastPositionOfElementInSortedArray.java" "./LC0034_FindFirstAndLastPositionOfElementInSortedArray.java"
-git add "LC0034_FindFirstAndLastPositionOfElementInSortedArray.java"
-git commit -m "feat(leetcode): solve LC0034 Find First and Last Position of Element in Sorted Array in Java"
-sleep 2
+# [1/6] LC0006_ZigzagConversion.java
+echo "[*] Processing [1/6]: LC0006 Zigzag Conversion..."
+if [ -f "./LC0006_ZigzagConversion.java" ] && git ls-files --error-unmatch "./LC0006_ZigzagConversion.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0006_ZigzagConversion.java"; then
+    echo "    [✓] LC0006_ZigzagConversion.java is already committed in git repository."
+else
+    cp "staging/day3/LC0006_ZigzagConversion.java" "./LC0006_ZigzagConversion.java"
+    git add "LC0006_ZigzagConversion.java"
+    git commit -m "feat(leetcode): solve LC0006 Zigzag Conversion in Java"
+    echo "    [+] Committed [1/6]: LC0006 Zigzag Conversion"
+    sleep 2
+fi
 
-# [2/6] LC0035_SearchInsertPosition.java
-echo "[*] Committing [2/6]: LC0035 Search Insert Position..."
-cp "staging/day3/LC0035_SearchInsertPosition.java" "./LC0035_SearchInsertPosition.java"
-git add "LC0035_SearchInsertPosition.java"
-git commit -m "feat(leetcode): solve LC0035 Search Insert Position in Java"
-sleep 2
+# [2/6] LC0012_IntegerToRoman.java
+echo "[*] Processing [2/6]: LC0012 Integer to Roman..."
+if [ -f "./LC0012_IntegerToRoman.java" ] && git ls-files --error-unmatch "./LC0012_IntegerToRoman.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0012_IntegerToRoman.java"; then
+    echo "    [✓] LC0012_IntegerToRoman.java is already committed in git repository."
+else
+    cp "staging/day3/LC0012_IntegerToRoman.java" "./LC0012_IntegerToRoman.java"
+    git add "LC0012_IntegerToRoman.java"
+    git commit -m "feat(leetcode): solve LC0012 Integer to Roman in Java"
+    echo "    [+] Committed [2/6]: LC0012 Integer to Roman"
+    sleep 2
+fi
 
-# [3/6] LC0048_RotateImage.java
-echo "[*] Committing [3/6]: LC0048 Rotate Image..."
-cp "staging/day3/LC0048_RotateImage.java" "./LC0048_RotateImage.java"
-git add "LC0048_RotateImage.java"
-git commit -m "feat(leetcode): solve LC0048 Rotate Image in Java"
-sleep 2
+# [3/6] LC0013_RomanToInteger.java
+echo "[*] Processing [3/6]: LC0013 Roman to Integer..."
+if [ -f "./LC0013_RomanToInteger.java" ] && git ls-files --error-unmatch "./LC0013_RomanToInteger.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0013_RomanToInteger.java"; then
+    echo "    [✓] LC0013_RomanToInteger.java is already committed in git repository."
+else
+    cp "staging/day3/LC0013_RomanToInteger.java" "./LC0013_RomanToInteger.java"
+    git add "LC0013_RomanToInteger.java"
+    git commit -m "feat(leetcode): solve LC0013 Roman to Integer in Java"
+    echo "    [+] Committed [3/6]: LC0013 Roman to Integer"
+    sleep 2
+fi
 
-# [4/6] LC0073_SetMatrixZeroes.java
-echo "[*] Committing [4/6]: LC0073 Set Matrix Zeroes..."
-cp "staging/day3/LC0073_SetMatrixZeroes.java" "./LC0073_SetMatrixZeroes.java"
-git add "LC0073_SetMatrixZeroes.java"
-git commit -m "feat(leetcode): solve LC0073 Set Matrix Zeroes in Java"
-sleep 2
+# [4/6] LC0043_MultiplyStrings.java
+echo "[*] Processing [4/6]: LC0043 Multiply Strings..."
+if [ -f "./LC0043_MultiplyStrings.java" ] && git ls-files --error-unmatch "./LC0043_MultiplyStrings.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0043_MultiplyStrings.java"; then
+    echo "    [✓] LC0043_MultiplyStrings.java is already committed in git repository."
+else
+    cp "staging/day3/LC0043_MultiplyStrings.java" "./LC0043_MultiplyStrings.java"
+    git add "LC0043_MultiplyStrings.java"
+    git commit -m "feat(leetcode): solve LC0043 Multiply Strings in Java"
+    echo "    [+] Committed [4/6]: LC0043 Multiply Strings"
+    sleep 2
+fi
 
-# [5/6] LC0074_SearchA2DMatrix.java
-echo "[*] Committing [5/6]: LC0074 Search a 2D Matrix..."
-cp "staging/day3/LC0074_SearchA2DMatrix.java" "./LC0074_SearchA2DMatrix.java"
-git add "LC0074_SearchA2DMatrix.java"
-git commit -m "feat(leetcode): solve LC0074 Search a 2D Matrix in Java"
-sleep 2
+# [5/6] LC0058_LengthOfLastWord.java
+echo "[*] Processing [5/6]: LC0058 Length of Last Word..."
+if [ -f "./LC0058_LengthOfLastWord.java" ] && git ls-files --error-unmatch "./LC0058_LengthOfLastWord.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0058_LengthOfLastWord.java"; then
+    echo "    [✓] LC0058_LengthOfLastWord.java is already committed in git repository."
+else
+    cp "staging/day3/LC0058_LengthOfLastWord.java" "./LC0058_LengthOfLastWord.java"
+    git add "LC0058_LengthOfLastWord.java"
+    git commit -m "feat(leetcode): solve LC0058 Length of Last Word in Java"
+    echo "    [+] Committed [5/6]: LC0058 Length of Last Word"
+    sleep 2
+fi
 
-# [6/6] LC0240_SearchA2DMatrixII.java
-echo "[*] Committing [6/6]: LC0240 Search a 2D Matrix II..."
-cp "staging/day3/LC0240_SearchA2DMatrixII.java" "./LC0240_SearchA2DMatrixII.java"
-git add "LC0240_SearchA2DMatrixII.java"
-git commit -m "feat(leetcode): solve LC0240 Search a 2D Matrix II in Java"
-sleep 2
+# [6/6] LC0125_ValidPalindrome.java
+echo "[*] Processing [6/6]: LC0125 Valid Palindrome..."
+if [ -f "./LC0125_ValidPalindrome.java" ] && git ls-files --error-unmatch "./LC0125_ValidPalindrome.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0125_ValidPalindrome.java"; then
+    echo "    [✓] LC0125_ValidPalindrome.java is already committed in git repository."
+else
+    cp "staging/day3/LC0125_ValidPalindrome.java" "./LC0125_ValidPalindrome.java"
+    git add "LC0125_ValidPalindrome.java"
+    git commit -m "feat(leetcode): solve LC0125 Valid Palindrome in Java"
+    echo "    [+] Committed [6/6]: LC0125 Valid Palindrome"
+    sleep 2
+fi
 
-echo "[*] Pushing all 6 commits to GitHub..."
-git push origin main
+echo "================================================================"
+echo "[*] Day 3 commits recorded! Pushing to GitHub..."
+echo "================================================================"
+git push origin main || git push
 
 echo ""
-echo "================================================================"
-echo "✅ Day 3 COMPLETE: 6 new Java solutions pushed to GitHub!"
+echo "🎉 [SUCCESS] Day 3 complete! 6 contributions pushed to GitHub."
 echo "================================================================"

@@ -12,62 +12,91 @@ echo "================================================================"
 echo "🚀 Executing Day 1 Submissions (6 Problems in Java)"
 echo "================================================================"
 
-# Ensure we have git configured
 if ! command -v git &> /dev/null; then
     echo "[-] Git is not installed. In Termux, run: pkg install git"
     exit 1
 fi
 
-# Pull latest commits cleanly
 echo "[*] Syncing with remote repository..."
 git pull --rebase origin main || true
 
-# [1/6] LC0016_3SumClosest.java
-echo "[*] Committing [1/6]: LC0016 3Sum Closest..."
-cp "staging/day1/LC0016_3SumClosest.java" "./LC0016_3SumClosest.java"
-git add "LC0016_3SumClosest.java"
-git commit -m "feat(leetcode): solve LC0016 3Sum Closest in Java"
-sleep 2
+# [1/6] LC0018_4Sum.java
+echo "[*] Processing [1/6]: LC0018 4Sum..."
+if [ -f "./LC0018_4Sum.java" ] && git ls-files --error-unmatch "./LC0018_4Sum.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0018_4Sum.java"; then
+    echo "    [✓] LC0018_4Sum.java is already committed in git repository."
+else
+    cp "staging/day1/LC0018_4Sum.java" "./LC0018_4Sum.java"
+    git add "LC0018_4Sum.java"
+    git commit -m "feat(leetcode): solve LC0018 4Sum in Java"
+    echo "    [+] Committed [1/6]: LC0018 4Sum"
+    sleep 2
+fi
 
-# [2/6] LC0026_RemoveDuplicatesFromSortedArray.java
-echo "[*] Committing [2/6]: LC0026 Remove Duplicates from Sorted Array..."
-cp "staging/day1/LC0026_RemoveDuplicatesFromSortedArray.java" "./LC0026_RemoveDuplicatesFromSortedArray.java"
-git add "LC0026_RemoveDuplicatesFromSortedArray.java"
-git commit -m "feat(leetcode): solve LC0026 Remove Duplicates from Sorted Array in Java"
-sleep 2
+# [2/6] LC0027_RemoveElement.java
+echo "[*] Processing [2/6]: LC0027 Remove Element..."
+if [ -f "./LC0027_RemoveElement.java" ] && git ls-files --error-unmatch "./LC0027_RemoveElement.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0027_RemoveElement.java"; then
+    echo "    [✓] LC0027_RemoveElement.java is already committed in git repository."
+else
+    cp "staging/day1/LC0027_RemoveElement.java" "./LC0027_RemoveElement.java"
+    git add "LC0027_RemoveElement.java"
+    git commit -m "feat(leetcode): solve LC0027 Remove Element in Java"
+    echo "    [+] Committed [2/6]: LC0027 Remove Element"
+    sleep 2
+fi
 
-# [3/6] LC0075_SortColors.java
-echo "[*] Committing [3/6]: LC0075 Sort Colors..."
-cp "staging/day1/LC0075_SortColors.java" "./LC0075_SortColors.java"
-git add "LC0075_SortColors.java"
-git commit -m "feat(leetcode): solve LC0075 Sort Colors in Java"
-sleep 2
+# [3/6] LC0080_RemoveDuplicatesFromSortedArrayII.java
+echo "[*] Processing [3/6]: LC0080 Remove Duplicates from Sorted Array II..."
+if [ -f "./LC0080_RemoveDuplicatesFromSortedArrayII.java" ] && git ls-files --error-unmatch "./LC0080_RemoveDuplicatesFromSortedArrayII.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0080_RemoveDuplicatesFromSortedArrayII.java"; then
+    echo "    [✓] LC0080_RemoveDuplicatesFromSortedArrayII.java is already committed in git repository."
+else
+    cp "staging/day1/LC0080_RemoveDuplicatesFromSortedArrayII.java" "./LC0080_RemoveDuplicatesFromSortedArrayII.java"
+    git add "LC0080_RemoveDuplicatesFromSortedArrayII.java"
+    git commit -m "feat(leetcode): solve LC0080 Remove Duplicates from Sorted Array II in Java"
+    echo "    [+] Committed [3/6]: LC0080 Remove Duplicates from Sorted Array II"
+    sleep 2
+fi
 
-# [4/6] LC0128_LongestConsecutiveSequence.java
-echo "[*] Committing [4/6]: LC0128 Longest Consecutive Sequence..."
-cp "staging/day1/LC0128_LongestConsecutiveSequence.java" "./LC0128_LongestConsecutiveSequence.java"
-git add "LC0128_LongestConsecutiveSequence.java"
-git commit -m "feat(leetcode): solve LC0128 Longest Consecutive Sequence in Java"
-sleep 2
+# [4/6] LC0088_MergeSortedArray.java
+echo "[*] Processing [4/6]: LC0088 Merge Sorted Array..."
+if [ -f "./LC0088_MergeSortedArray.java" ] && git ls-files --error-unmatch "./LC0088_MergeSortedArray.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0088_MergeSortedArray.java"; then
+    echo "    [✓] LC0088_MergeSortedArray.java is already committed in git repository."
+else
+    cp "staging/day1/LC0088_MergeSortedArray.java" "./LC0088_MergeSortedArray.java"
+    git add "LC0088_MergeSortedArray.java"
+    git commit -m "feat(leetcode): solve LC0088 Merge Sorted Array in Java"
+    echo "    [+] Committed [4/6]: LC0088 Merge Sorted Array"
+    sleep 2
+fi
 
-# [5/6] LC0167_TwoSumIIInputArrayIsSorted.java
-echo "[*] Committing [5/6]: LC0167 Two Sum II - Input Array Is Sorted..."
-cp "staging/day1/LC0167_TwoSumIIInputArrayIsSorted.java" "./LC0167_TwoSumIIInputArrayIsSorted.java"
-git add "LC0167_TwoSumIIInputArrayIsSorted.java"
-git commit -m "feat(leetcode): solve LC0167 Two Sum II - Input Array Is Sorted in Java"
-sleep 2
+# [5/6] LC0209_MinimumSizeSubarraySum.java
+echo "[*] Processing [5/6]: LC0209 Minimum Size Subarray Sum..."
+if [ -f "./LC0209_MinimumSizeSubarraySum.java" ] && git ls-files --error-unmatch "./LC0209_MinimumSizeSubarraySum.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0209_MinimumSizeSubarraySum.java"; then
+    echo "    [✓] LC0209_MinimumSizeSubarraySum.java is already committed in git repository."
+else
+    cp "staging/day1/LC0209_MinimumSizeSubarraySum.java" "./LC0209_MinimumSizeSubarraySum.java"
+    git add "LC0209_MinimumSizeSubarraySum.java"
+    git commit -m "feat(leetcode): solve LC0209 Minimum Size Subarray Sum in Java"
+    echo "    [+] Committed [5/6]: LC0209 Minimum Size Subarray Sum"
+    sleep 2
+fi
 
-# [6/6] LC0189_RotateArray.java
-echo "[*] Committing [6/6]: LC0189 Rotate Array..."
-cp "staging/day1/LC0189_RotateArray.java" "./LC0189_RotateArray.java"
-git add "LC0189_RotateArray.java"
-git commit -m "feat(leetcode): solve LC0189 Rotate Array in Java"
-sleep 2
+# [6/6] LC0283_MoveZeroes.java
+echo "[*] Processing [6/6]: LC0283 Move Zeroes..."
+if [ -f "./LC0283_MoveZeroes.java" ] && git ls-files --error-unmatch "./LC0283_MoveZeroes.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0283_MoveZeroes.java"; then
+    echo "    [✓] LC0283_MoveZeroes.java is already committed in git repository."
+else
+    cp "staging/day1/LC0283_MoveZeroes.java" "./LC0283_MoveZeroes.java"
+    git add "LC0283_MoveZeroes.java"
+    git commit -m "feat(leetcode): solve LC0283 Move Zeroes in Java"
+    echo "    [+] Committed [6/6]: LC0283 Move Zeroes"
+    sleep 2
+fi
 
-echo "[*] Pushing all 6 commits to GitHub..."
-git push origin main
+echo "================================================================"
+echo "[*] Day 1 commits recorded! Pushing to GitHub..."
+echo "================================================================"
+git push origin main || git push
 
 echo ""
-echo "================================================================"
-echo "✅ Day 1 COMPLETE: 6 new Java solutions pushed to GitHub!"
+echo "🎉 [SUCCESS] Day 1 complete! 6 contributions pushed to GitHub."
 echo "================================================================"

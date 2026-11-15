@@ -12,62 +12,91 @@ echo "================================================================"
 echo "🚀 Executing Day 6 Submissions (6 Problems in Java)"
 echo "================================================================"
 
-# Ensure we have git configured
 if ! command -v git &> /dev/null; then
     echo "[-] Git is not installed. In Termux, run: pkg install git"
     exit 1
 fi
 
-# Pull latest commits cleanly
 echo "[*] Syncing with remote repository..."
 git pull --rebase origin main || true
 
-# [1/6] LC0017_LetterCombinationsOfAPhoneNumber.java
-echo "[*] Committing [1/6]: LC0017 Letter Combinations of a Phone Number..."
-cp "staging/day6/LC0017_LetterCombinationsOfAPhoneNumber.java" "./LC0017_LetterCombinationsOfAPhoneNumber.java"
-git add "LC0017_LetterCombinationsOfAPhoneNumber.java"
-git commit -m "feat(leetcode): solve LC0017 Letter Combinations of a Phone Number in Java"
-sleep 2
+# [1/6] LC0045_JumpGameII.java
+echo "[*] Processing [1/6]: LC0045 Jump Game II..."
+if [ -f "./LC0045_JumpGameII.java" ] && git ls-files --error-unmatch "./LC0045_JumpGameII.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0045_JumpGameII.java"; then
+    echo "    [✓] LC0045_JumpGameII.java is already committed in git repository."
+else
+    cp "staging/day6/LC0045_JumpGameII.java" "./LC0045_JumpGameII.java"
+    git add "LC0045_JumpGameII.java"
+    git commit -m "feat(leetcode): solve LC0045 Jump Game II in Java"
+    echo "    [+] Committed [1/6]: LC0045 Jump Game II"
+    sleep 2
+fi
 
-# [2/6] LC0039_CombinationSum.java
-echo "[*] Committing [2/6]: LC0039 Combination Sum..."
-cp "staging/day6/LC0039_CombinationSum.java" "./LC0039_CombinationSum.java"
-git add "LC0039_CombinationSum.java"
-git commit -m "feat(leetcode): solve LC0039 Combination Sum in Java"
-sleep 2
+# [2/6] LC0063_UniquePathsII.java
+echo "[*] Processing [2/6]: LC0063 Unique Paths II..."
+if [ -f "./LC0063_UniquePathsII.java" ] && git ls-files --error-unmatch "./LC0063_UniquePathsII.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0063_UniquePathsII.java"; then
+    echo "    [✓] LC0063_UniquePathsII.java is already committed in git repository."
+else
+    cp "staging/day6/LC0063_UniquePathsII.java" "./LC0063_UniquePathsII.java"
+    git add "LC0063_UniquePathsII.java"
+    git commit -m "feat(leetcode): solve LC0063 Unique Paths II in Java"
+    echo "    [+] Committed [2/6]: LC0063 Unique Paths II"
+    sleep 2
+fi
 
-# [3/6] LC0040_CombinationSumII.java
-echo "[*] Committing [3/6]: LC0040 Combination Sum II..."
-cp "staging/day6/LC0040_CombinationSumII.java" "./LC0040_CombinationSumII.java"
-git add "LC0040_CombinationSumII.java"
-git commit -m "feat(leetcode): solve LC0040 Combination Sum II in Java"
-sleep 2
+# [3/6] LC0134_GasStation.java
+echo "[*] Processing [3/6]: LC0134 Gas Station..."
+if [ -f "./LC0134_GasStation.java" ] && git ls-files --error-unmatch "./LC0134_GasStation.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0134_GasStation.java"; then
+    echo "    [✓] LC0134_GasStation.java is already committed in git repository."
+else
+    cp "staging/day6/LC0134_GasStation.java" "./LC0134_GasStation.java"
+    git add "LC0134_GasStation.java"
+    git commit -m "feat(leetcode): solve LC0134 Gas Station in Java"
+    echo "    [+] Committed [3/6]: LC0134 Gas Station"
+    sleep 2
+fi
 
-# [4/6] LC0064_MinimumPathSum.java
-echo "[*] Committing [4/6]: LC0064 Minimum Path Sum..."
-cp "staging/day6/LC0064_MinimumPathSum.java" "./LC0064_MinimumPathSum.java"
-git add "LC0064_MinimumPathSum.java"
-git commit -m "feat(leetcode): solve LC0064 Minimum Path Sum in Java"
-sleep 2
+# [4/6] LC0213_HouseRobberII.java
+echo "[*] Processing [4/6]: LC0213 House Robber II..."
+if [ -f "./LC0213_HouseRobberII.java" ] && git ls-files --error-unmatch "./LC0213_HouseRobberII.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0213_HouseRobberII.java"; then
+    echo "    [✓] LC0213_HouseRobberII.java is already committed in git repository."
+else
+    cp "staging/day6/LC0213_HouseRobberII.java" "./LC0213_HouseRobberII.java"
+    git add "LC0213_HouseRobberII.java"
+    git commit -m "feat(leetcode): solve LC0213 House Robber II in Java"
+    echo "    [+] Committed [4/6]: LC0213 House Robber II"
+    sleep 2
+fi
 
-# [5/6] LC0091_DecodeWays.java
-echo "[*] Committing [5/6]: LC0091 Decode Ways..."
-cp "staging/day6/LC0091_DecodeWays.java" "./LC0091_DecodeWays.java"
-git add "LC0091_DecodeWays.java"
-git commit -m "feat(leetcode): solve LC0091 Decode Ways in Java"
-sleep 2
+# [5/6] LC0279_PerfectSquares.java
+echo "[*] Processing [5/6]: LC0279 Perfect Squares..."
+if [ -f "./LC0279_PerfectSquares.java" ] && git ls-files --error-unmatch "./LC0279_PerfectSquares.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0279_PerfectSquares.java"; then
+    echo "    [✓] LC0279_PerfectSquares.java is already committed in git repository."
+else
+    cp "staging/day6/LC0279_PerfectSquares.java" "./LC0279_PerfectSquares.java"
+    git add "LC0279_PerfectSquares.java"
+    git commit -m "feat(leetcode): solve LC0279 Perfect Squares in Java"
+    echo "    [+] Committed [5/6]: LC0279 Perfect Squares"
+    sleep 2
+fi
 
-# [6/6] LC0120_Triangle.java
-echo "[*] Committing [6/6]: LC0120 Triangle..."
-cp "staging/day6/LC0120_Triangle.java" "./LC0120_Triangle.java"
-git add "LC0120_Triangle.java"
-git commit -m "feat(leetcode): solve LC0120 Triangle in Java"
-sleep 2
+# [6/6] LC0338_CountingBits.java
+echo "[*] Processing [6/6]: LC0338 Counting Bits..."
+if [ -f "./LC0338_CountingBits.java" ] && git ls-files --error-unmatch "./LC0338_CountingBits.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0338_CountingBits.java"; then
+    echo "    [✓] LC0338_CountingBits.java is already committed in git repository."
+else
+    cp "staging/day6/LC0338_CountingBits.java" "./LC0338_CountingBits.java"
+    git add "LC0338_CountingBits.java"
+    git commit -m "feat(leetcode): solve LC0338 Counting Bits in Java"
+    echo "    [+] Committed [6/6]: LC0338 Counting Bits"
+    sleep 2
+fi
 
-echo "[*] Pushing all 6 commits to GitHub..."
-git push origin main
+echo "================================================================"
+echo "[*] Day 6 commits recorded! Pushing to GitHub..."
+echo "================================================================"
+git push origin main || git push
 
 echo ""
-echo "================================================================"
-echo "✅ Day 6 COMPLETE: 6 new Java solutions pushed to GitHub!"
+echo "🎉 [SUCCESS] Day 6 complete! 6 contributions pushed to GitHub."
 echo "================================================================"

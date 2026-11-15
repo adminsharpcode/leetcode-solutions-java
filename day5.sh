@@ -12,62 +12,91 @@ echo "================================================================"
 echo "🚀 Executing Day 5 Submissions (6 Problems in Java)"
 echo "================================================================"
 
-# Ensure we have git configured
 if ! command -v git &> /dev/null; then
     echo "[-] Git is not installed. In Termux, run: pkg install git"
     exit 1
 fi
 
-# Pull latest commits cleanly
 echo "[*] Syncing with remote repository..."
 git pull --rebase origin main || true
 
-# [1/6] LC0100_SameTree.java
-echo "[*] Committing [1/6]: LC0100 Same Tree..."
-cp "staging/day5/LC0100_SameTree.java" "./LC0100_SameTree.java"
-git add "LC0100_SameTree.java"
-git commit -m "feat(leetcode): solve LC0100 Same Tree in Java"
-sleep 2
+# [1/6] LC0108_ConvertSortedArrayToBST.java
+echo "[*] Processing [1/6]: LC0108 Convert Sorted Array to Binary Search Tree..."
+if [ -f "./LC0108_ConvertSortedArrayToBST.java" ] && git ls-files --error-unmatch "./LC0108_ConvertSortedArrayToBST.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0108_ConvertSortedArrayToBST.java"; then
+    echo "    [✓] LC0108_ConvertSortedArrayToBST.java is already committed in git repository."
+else
+    cp "staging/day5/LC0108_ConvertSortedArrayToBST.java" "./LC0108_ConvertSortedArrayToBST.java"
+    git add "LC0108_ConvertSortedArrayToBST.java"
+    git commit -m "feat(leetcode): solve LC0108 Convert Sorted Array to Binary Search Tree in Java"
+    echo "    [+] Committed [1/6]: LC0108 Convert Sorted Array to Binary Search Tree"
+    sleep 2
+fi
 
-# [2/6] LC0101_SymmetricTree.java
-echo "[*] Committing [2/6]: LC0101 Symmetric Tree..."
-cp "staging/day5/LC0101_SymmetricTree.java" "./LC0101_SymmetricTree.java"
-git add "LC0101_SymmetricTree.java"
-git commit -m "feat(leetcode): solve LC0101 Symmetric Tree in Java"
-sleep 2
+# [2/6] LC0111_MinimumDepthOfBinaryTree.java
+echo "[*] Processing [2/6]: LC0111 Minimum Depth of Binary Tree..."
+if [ -f "./LC0111_MinimumDepthOfBinaryTree.java" ] && git ls-files --error-unmatch "./LC0111_MinimumDepthOfBinaryTree.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0111_MinimumDepthOfBinaryTree.java"; then
+    echo "    [✓] LC0111_MinimumDepthOfBinaryTree.java is already committed in git repository."
+else
+    cp "staging/day5/LC0111_MinimumDepthOfBinaryTree.java" "./LC0111_MinimumDepthOfBinaryTree.java"
+    git add "LC0111_MinimumDepthOfBinaryTree.java"
+    git commit -m "feat(leetcode): solve LC0111 Minimum Depth of Binary Tree in Java"
+    echo "    [+] Committed [2/6]: LC0111 Minimum Depth of Binary Tree"
+    sleep 2
+fi
 
-# [3/6] LC0103_BinaryTreeZigzagLevelOrderTraversal.java
-echo "[*] Committing [3/6]: LC0103 Binary Tree Zigzag Level Order Traversal..."
-cp "staging/day5/LC0103_BinaryTreeZigzagLevelOrderTraversal.java" "./LC0103_BinaryTreeZigzagLevelOrderTraversal.java"
-git add "LC0103_BinaryTreeZigzagLevelOrderTraversal.java"
-git commit -m "feat(leetcode): solve LC0103 Binary Tree Zigzag Level Order Traversal in Java"
-sleep 2
+# [3/6] LC0112_PathSum.java
+echo "[*] Processing [3/6]: LC0112 Path Sum..."
+if [ -f "./LC0112_PathSum.java" ] && git ls-files --error-unmatch "./LC0112_PathSum.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0112_PathSum.java"; then
+    echo "    [✓] LC0112_PathSum.java is already committed in git repository."
+else
+    cp "staging/day5/LC0112_PathSum.java" "./LC0112_PathSum.java"
+    git add "LC0112_PathSum.java"
+    git commit -m "feat(leetcode): solve LC0112 Path Sum in Java"
+    echo "    [+] Committed [3/6]: LC0112 Path Sum"
+    sleep 2
+fi
 
-# [4/6] LC0110_BalancedBinaryTree.java
-echo "[*] Committing [4/6]: LC0110 Balanced Binary Tree..."
-cp "staging/day5/LC0110_BalancedBinaryTree.java" "./LC0110_BalancedBinaryTree.java"
-git add "LC0110_BalancedBinaryTree.java"
-git commit -m "feat(leetcode): solve LC0110 Balanced Binary Tree in Java"
-sleep 2
+# [4/6] LC0113_PathSumII.java
+echo "[*] Processing [4/6]: LC0113 Path Sum II..."
+if [ -f "./LC0113_PathSumII.java" ] && git ls-files --error-unmatch "./LC0113_PathSumII.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0113_PathSumII.java"; then
+    echo "    [✓] LC0113_PathSumII.java is already committed in git repository."
+else
+    cp "staging/day5/LC0113_PathSumII.java" "./LC0113_PathSumII.java"
+    git add "LC0113_PathSumII.java"
+    git commit -m "feat(leetcode): solve LC0113 Path Sum II in Java"
+    echo "    [+] Committed [4/6]: LC0113 Path Sum II"
+    sleep 2
+fi
 
-# [5/6] LC0230_KthSmallestElementInABST.java
-echo "[*] Committing [5/6]: LC0230 Kth Smallest Element in a BST..."
-cp "staging/day5/LC0230_KthSmallestElementInABST.java" "./LC0230_KthSmallestElementInABST.java"
-git add "LC0230_KthSmallestElementInABST.java"
-git commit -m "feat(leetcode): solve LC0230 Kth Smallest Element in a BST in Java"
-sleep 2
+# [5/6] LC0129_SumRootToLeafNumbers.java
+echo "[*] Processing [5/6]: LC0129 Sum Root to Leaf Numbers..."
+if [ -f "./LC0129_SumRootToLeafNumbers.java" ] && git ls-files --error-unmatch "./LC0129_SumRootToLeafNumbers.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0129_SumRootToLeafNumbers.java"; then
+    echo "    [✓] LC0129_SumRootToLeafNumbers.java is already committed in git repository."
+else
+    cp "staging/day5/LC0129_SumRootToLeafNumbers.java" "./LC0129_SumRootToLeafNumbers.java"
+    git add "LC0129_SumRootToLeafNumbers.java"
+    git commit -m "feat(leetcode): solve LC0129 Sum Root to Leaf Numbers in Java"
+    echo "    [+] Committed [5/6]: LC0129 Sum Root to Leaf Numbers"
+    sleep 2
+fi
 
-# [6/6] LC0236_LowestCommonAncestorOfABinaryTree.java
-echo "[*] Committing [6/6]: LC0236 Lowest Common Ancestor of a Binary Tree..."
-cp "staging/day5/LC0236_LowestCommonAncestorOfABinaryTree.java" "./LC0236_LowestCommonAncestorOfABinaryTree.java"
-git add "LC0236_LowestCommonAncestorOfABinaryTree.java"
-git commit -m "feat(leetcode): solve LC0236 Lowest Common Ancestor of a Binary Tree in Java"
-sleep 2
+# [6/6] LC0199_BinaryTreeRightSideView.java
+echo "[*] Processing [6/6]: LC0199 Binary Tree Right Side View..."
+if [ -f "./LC0199_BinaryTreeRightSideView.java" ] && git ls-files --error-unmatch "./LC0199_BinaryTreeRightSideView.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0199_BinaryTreeRightSideView.java"; then
+    echo "    [✓] LC0199_BinaryTreeRightSideView.java is already committed in git repository."
+else
+    cp "staging/day5/LC0199_BinaryTreeRightSideView.java" "./LC0199_BinaryTreeRightSideView.java"
+    git add "LC0199_BinaryTreeRightSideView.java"
+    git commit -m "feat(leetcode): solve LC0199 Binary Tree Right Side View in Java"
+    echo "    [+] Committed [6/6]: LC0199 Binary Tree Right Side View"
+    sleep 2
+fi
 
-echo "[*] Pushing all 6 commits to GitHub..."
-git push origin main
+echo "================================================================"
+echo "[*] Day 5 commits recorded! Pushing to GitHub..."
+echo "================================================================"
+git push origin main || git push
 
 echo ""
-echo "================================================================"
-echo "✅ Day 5 COMPLETE: 6 new Java solutions pushed to GitHub!"
+echo "🎉 [SUCCESS] Day 5 complete! 6 contributions pushed to GitHub."
 echo "================================================================"

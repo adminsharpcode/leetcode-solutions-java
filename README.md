@@ -1,6 +1,6 @@
 # LeetCode Solutions in Java 🚀
 
-A curated collection of **47 comprehensive, production-grade Java solutions** to top LeetCode algorithm and data structure problems. Each solution includes problem statement links, approach breakdowns, Big-O time and space complexity analyses, and self-contained executable `main()` test cases.
+A curated collection of **53 comprehensive, production-grade Java solutions** to top LeetCode algorithm and data structure problems. Each solution includes problem statement links, approach breakdowns, Big-O time and space complexity analyses, and self-contained executable `main()` test cases.
 
 ---
 
@@ -55,6 +55,12 @@ A curated collection of **47 comprehensive, production-grade Java solutions** to
 | 45 | 226 | Invert Binary Tree | 🟢 Easy | Recursive DFS | $O(N)$ | $O(H)$ | [`LC0226_InvertBinaryTree.java`](./LC0226_InvertBinaryTree.java) |
 | 46 | 238 | Product of Array Except Self | 🟡 Medium | Prefix & Suffix Products | $O(N)$ | $O(1)$ | [`LC0238_ProductOfArrayExceptSelf.java`](./LC0238_ProductOfArrayExceptSelf.java) |
 | 47 | 300 | Longest Increasing Subsequence | 🟡 Medium | Patience Sorting + Binary Search | $O(N \log N)$ | $O(N)$ | [`LC0300_LongestIncreasingSubsequence.java`](./LC0300_LongestIncreasingSubsequence.java) |
+| 48 | 8 | String to Integer (atoi) | 🟡 Medium | Strings / Math Overflow | $O(N)$ | $O(1)$ | [`LC0008_StringToIntegerAtoi.java`](./LC0008_StringToIntegerAtoi.java) |
+| 49 | 14 | Longest Common Prefix | 🟢 Easy | Strings | $O(S)$ | $O(1)$ | [`LC0014_LongestCommonPrefix.java`](./LC0014_LongestCommonPrefix.java) |
+| 50 | 28 | Find Index of First Occurrence in String | 🟢 Easy | KMP Linear Matching | $O(N + M)$ | $O(M)$ | [`LC0028_FindTheIndexOfTheFirstOccurrenceInAString.java`](./LC0028_FindTheIndexOfTheFirstOccurrenceInAString.java) |
+| 51 | 36 | Valid Sudoku | 🟡 Medium | Bitmask Hash Matrix | $O(1)$ | $O(1)$ | [`LC0036_ValidSudoku.java`](./LC0036_ValidSudoku.java) |
+| 52 | 66 | Plus One | 🟢 Easy | Array / Math | $O(N)$ | $O(1)$ | [`LC0066_PlusOne.java`](./LC0066_PlusOne.java) |
+| 53 | 69 | Sqrt(x) | 🟢 Easy | Binary Search | $O(\log X)$ | $O(1)$ | [`LC0069_Sqrtx.java`](./LC0069_Sqrtx.java) |
 
 ---
 

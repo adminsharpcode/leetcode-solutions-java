@@ -2014,7 +2014,7 @@ def generate_day_scripts():
                 f'    git add "{filename}"',
                 f'    git commit -m "feat(leetcode): solve {title} in Java"',
                 f'    echo "    [+] Committed [{i}/6]: {title}"',
-                f'    sleep 2',
+                f'    command -v sleep >/dev/null 2>&1 && sleep 2 || true',
                 f'fi',
                 ""
             ])
@@ -2147,8 +2147,11 @@ if [ ! -f "day${TARGET_DAY}.sh" ]; then
 fi
 
 echo "[*] Launching execution for Day $TARGET_DAY..."
-chmod +x "day${TARGET_DAY}.sh"
-bash "day${TARGET_DAY}.sh"
+if command -v chmod &> /dev/null; then
+    chmod +x "day${TARGET_DAY}.sh" || true
+fi
+
+sh "day${TARGET_DAY}.sh"
 """
 
     with open(auto_sh_path, "wb") as f:
@@ -2169,14 +2172,16 @@ set -e
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
-chmod +x auto_submit.sh
+if command -v chmod &> /dev/null; then
+    chmod +x auto_submit.sh || true
+fi
 
 if [ "$1" == "status" ] || [ "$1" == "--status" ]; then
-    bash auto_submit.sh --status
+    sh auto_submit.sh --status
 elif [ -n "$1" ]; then
-    bash auto_submit.sh "$1"
+    sh auto_submit.sh "$1"
 else
-    bash auto_submit.sh auto
+    sh auto_submit.sh auto
 fi
 """
     with open(run_sh_path, "wb") as f:

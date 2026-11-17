@@ -29,7 +29,7 @@ else
     git add "LC0029_DivideTwoIntegers.java"
     git commit -m "feat(leetcode): solve LC0029 Divide Two Integers in Java"
     echo "    [+] Committed [1/6]: LC0029 Divide Two Integers"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [2/6] LC0077_Combinations.java
@@ -41,7 +41,7 @@ else
     git add "LC0077_Combinations.java"
     git commit -m "feat(leetcode): solve LC0077 Combinations in Java"
     echo "    [+] Committed [2/6]: LC0077 Combinations"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [3/6] LC0090_SubsetsII.java
@@ -53,7 +53,7 @@ else
     git add "LC0090_SubsetsII.java"
     git commit -m "feat(leetcode): solve LC0090 Subsets II in Java"
     echo "    [+] Committed [3/6]: LC0090 Subsets II"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [4/6] LC0202_HappyNumber.java
@@ -65,7 +65,7 @@ else
     git add "LC0202_HappyNumber.java"
     git commit -m "feat(leetcode): solve LC0202 Happy Number in Java"
     echo "    [+] Committed [4/6]: LC0202 Happy Number"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [5/6] LC0242_ValidAnagram.java
@@ -77,7 +77,7 @@ else
     git add "LC0242_ValidAnagram.java"
     git commit -m "feat(leetcode): solve LC0242 Valid Anagram in Java"
     echo "    [+] Committed [5/6]: LC0242 Valid Anagram"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [6/6] LC0295_FindMedianFromDataStream.java
@@ -89,7 +89,7 @@ else
     git add "LC0295_FindMedianFromDataStream.java"
     git commit -m "feat(leetcode): solve LC0295 Find Median from Data Stream in Java"
     echo "    [+] Committed [6/6]: LC0295 Find Median from Data Stream"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 echo "================================================================"

@@ -104,5 +104,8 @@ if [ ! -f "day${TARGET_DAY}.sh" ]; then
 fi
 
 echo "[*] Launching execution for Day $TARGET_DAY..."
-chmod +x "day${TARGET_DAY}.sh"
-bash "day${TARGET_DAY}.sh"
+if command -v chmod &> /dev/null; then
+    chmod +x "day${TARGET_DAY}.sh" || true
+fi
+
+sh "day${TARGET_DAY}.sh"

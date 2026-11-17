@@ -29,7 +29,7 @@ else
     git add "LC0018_4Sum.java"
     git commit -m "feat(leetcode): solve LC0018 4Sum in Java"
     echo "    [+] Committed [1/6]: LC0018 4Sum"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [2/6] LC0027_RemoveElement.java
@@ -41,7 +41,7 @@ else
     git add "LC0027_RemoveElement.java"
     git commit -m "feat(leetcode): solve LC0027 Remove Element in Java"
     echo "    [+] Committed [2/6]: LC0027 Remove Element"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [3/6] LC0080_RemoveDuplicatesFromSortedArrayII.java
@@ -53,7 +53,7 @@ else
     git add "LC0080_RemoveDuplicatesFromSortedArrayII.java"
     git commit -m "feat(leetcode): solve LC0080 Remove Duplicates from Sorted Array II in Java"
     echo "    [+] Committed [3/6]: LC0080 Remove Duplicates from Sorted Array II"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [4/6] LC0088_MergeSortedArray.java
@@ -65,7 +65,7 @@ else
     git add "LC0088_MergeSortedArray.java"
     git commit -m "feat(leetcode): solve LC0088 Merge Sorted Array in Java"
     echo "    [+] Committed [4/6]: LC0088 Merge Sorted Array"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [5/6] LC0209_MinimumSizeSubarraySum.java
@@ -77,7 +77,7 @@ else
     git add "LC0209_MinimumSizeSubarraySum.java"
     git commit -m "feat(leetcode): solve LC0209 Minimum Size Subarray Sum in Java"
     echo "    [+] Committed [5/6]: LC0209 Minimum Size Subarray Sum"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [6/6] LC0283_MoveZeroes.java
@@ -89,7 +89,7 @@ else
     git add "LC0283_MoveZeroes.java"
     git commit -m "feat(leetcode): solve LC0283 Move Zeroes in Java"
     echo "    [+] Committed [6/6]: LC0283 Move Zeroes"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 echo "================================================================"

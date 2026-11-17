@@ -29,7 +29,7 @@ else
     git add "LC0057_InsertInterval.java"
     git commit -m "feat(leetcode): solve LC0057 Insert Interval in Java"
     echo "    [+] Committed [1/6]: LC0057 Insert Interval"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [2/6] LC0081_SearchInRotatedSortedArrayII.java
@@ -41,7 +41,7 @@ else
     git add "LC0081_SearchInRotatedSortedArrayII.java"
     git commit -m "feat(leetcode): solve LC0081 Search in Rotated Sorted Array II in Java"
     echo "    [+] Committed [2/6]: LC0081 Search in Rotated Sorted Array II"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [3/6] LC0162_FindPeakElement.java
@@ -53,7 +53,7 @@ else
     git add "LC0162_FindPeakElement.java"
     git commit -m "feat(leetcode): solve LC0162 Find Peak Element in Java"
     echo "    [+] Committed [3/6]: LC0162 Find Peak Element"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [4/6] LC0278_FirstBadVersion.java
@@ -65,7 +65,7 @@ else
     git add "LC0278_FirstBadVersion.java"
     git commit -m "feat(leetcode): solve LC0278 First Bad Version in Java"
     echo "    [+] Committed [4/6]: LC0278 First Bad Version"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [5/6] LC0704_BinarySearch.java
@@ -77,7 +77,7 @@ else
     git add "LC0704_BinarySearch.java"
     git commit -m "feat(leetcode): solve LC0704 Binary Search in Java"
     echo "    [+] Committed [5/6]: LC0704 Binary Search"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [6/6] LC0875_KokoEatingBananas.java
@@ -89,7 +89,7 @@ else
     git add "LC0875_KokoEatingBananas.java"
     git commit -m "feat(leetcode): solve LC0875 Koko Eating Bananas in Java"
     echo "    [+] Committed [6/6]: LC0875 Koko Eating Bananas"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 echo "================================================================"

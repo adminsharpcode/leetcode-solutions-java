@@ -29,7 +29,7 @@ else
     git add "LC0082_RemoveDuplicatesFromSortedListII.java"
     git commit -m "feat(leetcode): solve LC0082 Remove Duplicates from Sorted List II in Java"
     echo "    [+] Committed [1/6]: LC0082 Remove Duplicates from Sorted List II"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [2/6] LC0083_RemoveDuplicatesFromSortedList.java
@@ -41,7 +41,7 @@ else
     git add "LC0083_RemoveDuplicatesFromSortedList.java"
     git commit -m "feat(leetcode): solve LC0083 Remove Duplicates from Sorted List in Java"
     echo "    [+] Committed [2/6]: LC0083 Remove Duplicates from Sorted List"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [3/6] LC0086_PartitionList.java
@@ -53,7 +53,7 @@ else
     git add "LC0086_PartitionList.java"
     git commit -m "feat(leetcode): solve LC0086 Partition List in Java"
     echo "    [+] Committed [3/6]: LC0086 Partition List"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [4/6] LC0092_ReverseLinkedListII.java
@@ -65,7 +65,7 @@ else
     git add "LC0092_ReverseLinkedListII.java"
     git commit -m "feat(leetcode): solve LC0092 Reverse Linked List II in Java"
     echo "    [+] Committed [4/6]: LC0092 Reverse Linked List II"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [5/6] LC0160_IntersectionOfTwoLinkedLists.java
@@ -77,7 +77,7 @@ else
     git add "LC0160_IntersectionOfTwoLinkedLists.java"
     git commit -m "feat(leetcode): solve LC0160 Intersection of Two Linked Lists in Java"
     echo "    [+] Committed [5/6]: LC0160 Intersection of Two Linked Lists"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [6/6] LC0203_RemoveLinkedListElements.java
@@ -89,7 +89,7 @@ else
     git add "LC0203_RemoveLinkedListElements.java"
     git commit -m "feat(leetcode): solve LC0203 Remove Linked List Elements in Java"
     echo "    [+] Committed [6/6]: LC0203 Remove Linked List Elements"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 echo "================================================================"

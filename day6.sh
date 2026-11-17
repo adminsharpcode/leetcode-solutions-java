@@ -29,7 +29,7 @@ else
     git add "LC0045_JumpGameII.java"
     git commit -m "feat(leetcode): solve LC0045 Jump Game II in Java"
     echo "    [+] Committed [1/6]: LC0045 Jump Game II"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [2/6] LC0063_UniquePathsII.java
@@ -41,7 +41,7 @@ else
     git add "LC0063_UniquePathsII.java"
     git commit -m "feat(leetcode): solve LC0063 Unique Paths II in Java"
     echo "    [+] Committed [2/6]: LC0063 Unique Paths II"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [3/6] LC0134_GasStation.java
@@ -53,7 +53,7 @@ else
     git add "LC0134_GasStation.java"
     git commit -m "feat(leetcode): solve LC0134 Gas Station in Java"
     echo "    [+] Committed [3/6]: LC0134 Gas Station"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [4/6] LC0213_HouseRobberII.java
@@ -65,7 +65,7 @@ else
     git add "LC0213_HouseRobberII.java"
     git commit -m "feat(leetcode): solve LC0213 House Robber II in Java"
     echo "    [+] Committed [4/6]: LC0213 House Robber II"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [5/6] LC0279_PerfectSquares.java
@@ -77,7 +77,7 @@ else
     git add "LC0279_PerfectSquares.java"
     git commit -m "feat(leetcode): solve LC0279 Perfect Squares in Java"
     echo "    [+] Committed [5/6]: LC0279 Perfect Squares"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [6/6] LC0338_CountingBits.java
@@ -89,7 +89,7 @@ else
     git add "LC0338_CountingBits.java"
     git commit -m "feat(leetcode): solve LC0338 Counting Bits in Java"
     echo "    [+] Committed [6/6]: LC0338 Counting Bits"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 echo "================================================================"

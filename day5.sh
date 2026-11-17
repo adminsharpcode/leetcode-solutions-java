@@ -29,7 +29,7 @@ else
     git add "LC0108_ConvertSortedArrayToBST.java"
     git commit -m "feat(leetcode): solve LC0108 Convert Sorted Array to Binary Search Tree in Java"
     echo "    [+] Committed [1/6]: LC0108 Convert Sorted Array to Binary Search Tree"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [2/6] LC0111_MinimumDepthOfBinaryTree.java
@@ -41,7 +41,7 @@ else
     git add "LC0111_MinimumDepthOfBinaryTree.java"
     git commit -m "feat(leetcode): solve LC0111 Minimum Depth of Binary Tree in Java"
     echo "    [+] Committed [2/6]: LC0111 Minimum Depth of Binary Tree"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [3/6] LC0112_PathSum.java
@@ -53,7 +53,7 @@ else
     git add "LC0112_PathSum.java"
     git commit -m "feat(leetcode): solve LC0112 Path Sum in Java"
     echo "    [+] Committed [3/6]: LC0112 Path Sum"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [4/6] LC0113_PathSumII.java
@@ -65,7 +65,7 @@ else
     git add "LC0113_PathSumII.java"
     git commit -m "feat(leetcode): solve LC0113 Path Sum II in Java"
     echo "    [+] Committed [4/6]: LC0113 Path Sum II"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [5/6] LC0129_SumRootToLeafNumbers.java
@@ -77,7 +77,7 @@ else
     git add "LC0129_SumRootToLeafNumbers.java"
     git commit -m "feat(leetcode): solve LC0129 Sum Root to Leaf Numbers in Java"
     echo "    [+] Committed [5/6]: LC0129 Sum Root to Leaf Numbers"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 # [6/6] LC0199_BinaryTreeRightSideView.java
@@ -89,7 +89,7 @@ else
     git add "LC0199_BinaryTreeRightSideView.java"
     git commit -m "feat(leetcode): solve LC0199 Binary Tree Right Side View in Java"
     echo "    [+] Committed [6/6]: LC0199 Binary Tree Right Side View"
-    sleep 2
+    command -v sleep >/dev/null 2>&1 && sleep 2 || true
 fi
 
 echo "================================================================"

@@ -1,102 +1,67 @@
-#!/bin/bash
-# =================================================================
-# Day 6 LeetCode Submissions (6 Sequential Java Contributions)
-# Compatible with Termux (Android) and standard Linux/macOS bash
-# =================================================================
+#!/bin/sh
+# day6.sh — Week 3 Day 6 submission runner
 set -e
+echo "=== Week 3 Day 6 ==="
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-cd "$SCRIPT_DIR"
-
-echo "================================================================"
-echo "🚀 Executing Day 6 Submissions (6 Problems in Java)"
-echo "================================================================"
-
-if ! command -v git &> /dev/null; then
-    echo "[-] Git is not installed. In Termux, run: pkg install git"
-    exit 1
-fi
-
-echo "[*] Syncing with remote repository..."
-git pull --rebase origin main || true
-
-# [1/6] LC0045_JumpGameII.java
-echo "[*] Processing [1/6]: LC0045 Jump Game II..."
-if [ -f "./LC0045_JumpGameII.java" ] && git ls-files --error-unmatch "./LC0045_JumpGameII.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0045_JumpGameII.java"; then
-    echo "    [✓] LC0045_JumpGameII.java is already committed in git repository."
+# --- LC0211 Design Add and Search Words Data Structure ---
+FILE="staging/day6/LC0211_DesignAddSearchWords.java"
+if git ls-files --error-unmatch "$FILE" > /dev/null 2>&1; then
+  echo "SKIP: LC0211 Design Add and Search Words Data Structure already committed."
 else
-    cp "staging/day6/LC0045_JumpGameII.java" "./LC0045_JumpGameII.java"
-    git add "LC0045_JumpGameII.java"
-    git commit -m "feat(leetcode): solve LC0045 Jump Game II in Java"
-    echo "    [+] Committed [1/6]: LC0045 Jump Game II"
-    command -v sleep >/dev/null 2>&1 && sleep 2 || true
+  git add "$FILE"
+  git commit -m "feat(leetcode): solve LC0211 Design Add and Search Words Data Structure in Java"
+  echo "COMMITTED: LC0211 Design Add and Search Words Data Structure"
 fi
 
-# [2/6] LC0063_UniquePathsII.java
-echo "[*] Processing [2/6]: LC0063 Unique Paths II..."
-if [ -f "./LC0063_UniquePathsII.java" ] && git ls-files --error-unmatch "./LC0063_UniquePathsII.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0063_UniquePathsII.java"; then
-    echo "    [✓] LC0063_UniquePathsII.java is already committed in git repository."
+# --- LC0212 Word Search II ---
+FILE="staging/day6/LC0212_WordSearchII.java"
+if git ls-files --error-unmatch "$FILE" > /dev/null 2>&1; then
+  echo "SKIP: LC0212 Word Search II already committed."
 else
-    cp "staging/day6/LC0063_UniquePathsII.java" "./LC0063_UniquePathsII.java"
-    git add "LC0063_UniquePathsII.java"
-    git commit -m "feat(leetcode): solve LC0063 Unique Paths II in Java"
-    echo "    [+] Committed [2/6]: LC0063 Unique Paths II"
-    command -v sleep >/dev/null 2>&1 && sleep 2 || true
+  git add "$FILE"
+  git commit -m "feat(leetcode): solve LC0212 Word Search II in Java"
+  echo "COMMITTED: LC0212 Word Search II"
 fi
 
-# [3/6] LC0134_GasStation.java
-echo "[*] Processing [3/6]: LC0134 Gas Station..."
-if [ -f "./LC0134_GasStation.java" ] && git ls-files --error-unmatch "./LC0134_GasStation.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0134_GasStation.java"; then
-    echo "    [✓] LC0134_GasStation.java is already committed in git repository."
+# --- LC0421 Maximum XOR of Two Numbers in an Array ---
+FILE="staging/day6/LC0421_MaximumXOR.java"
+if git ls-files --error-unmatch "$FILE" > /dev/null 2>&1; then
+  echo "SKIP: LC0421 Maximum XOR of Two Numbers in an Array already committed."
 else
-    cp "staging/day6/LC0134_GasStation.java" "./LC0134_GasStation.java"
-    git add "LC0134_GasStation.java"
-    git commit -m "feat(leetcode): solve LC0134 Gas Station in Java"
-    echo "    [+] Committed [3/6]: LC0134 Gas Station"
-    command -v sleep >/dev/null 2>&1 && sleep 2 || true
+  git add "$FILE"
+  git commit -m "feat(leetcode): solve LC0421 Maximum XOR of Two Numbers in an Array in Java"
+  echo "COMMITTED: LC0421 Maximum XOR of Two Numbers in an Array"
 fi
 
-# [4/6] LC0213_HouseRobberII.java
-echo "[*] Processing [4/6]: LC0213 House Robber II..."
-if [ -f "./LC0213_HouseRobberII.java" ] && git ls-files --error-unmatch "./LC0213_HouseRobberII.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0213_HouseRobberII.java"; then
-    echo "    [✓] LC0213_HouseRobberII.java is already committed in git repository."
+# --- LC0472 Concatenated Words ---
+FILE="staging/day6/LC0472_ConcatenatedWords.java"
+if git ls-files --error-unmatch "$FILE" > /dev/null 2>&1; then
+  echo "SKIP: LC0472 Concatenated Words already committed."
 else
-    cp "staging/day6/LC0213_HouseRobberII.java" "./LC0213_HouseRobberII.java"
-    git add "LC0213_HouseRobberII.java"
-    git commit -m "feat(leetcode): solve LC0213 House Robber II in Java"
-    echo "    [+] Committed [4/6]: LC0213 House Robber II"
-    command -v sleep >/dev/null 2>&1 && sleep 2 || true
+  git add "$FILE"
+  git commit -m "feat(leetcode): solve LC0472 Concatenated Words in Java"
+  echo "COMMITTED: LC0472 Concatenated Words"
 fi
 
-# [5/6] LC0279_PerfectSquares.java
-echo "[*] Processing [5/6]: LC0279 Perfect Squares..."
-if [ -f "./LC0279_PerfectSquares.java" ] && git ls-files --error-unmatch "./LC0279_PerfectSquares.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0279_PerfectSquares.java"; then
-    echo "    [✓] LC0279_PerfectSquares.java is already committed in git repository."
+# --- LC0648 Replace Words ---
+FILE="staging/day6/LC0648_ReplaceWords.java"
+if git ls-files --error-unmatch "$FILE" > /dev/null 2>&1; then
+  echo "SKIP: LC0648 Replace Words already committed."
 else
-    cp "staging/day6/LC0279_PerfectSquares.java" "./LC0279_PerfectSquares.java"
-    git add "LC0279_PerfectSquares.java"
-    git commit -m "feat(leetcode): solve LC0279 Perfect Squares in Java"
-    echo "    [+] Committed [5/6]: LC0279 Perfect Squares"
-    command -v sleep >/dev/null 2>&1 && sleep 2 || true
+  git add "$FILE"
+  git commit -m "feat(leetcode): solve LC0648 Replace Words in Java"
+  echo "COMMITTED: LC0648 Replace Words"
 fi
 
-# [6/6] LC0338_CountingBits.java
-echo "[*] Processing [6/6]: LC0338 Counting Bits..."
-if [ -f "./LC0338_CountingBits.java" ] && git ls-files --error-unmatch "./LC0338_CountingBits.java" >/dev/null 2>&1 && git diff --quiet HEAD -- "./LC0338_CountingBits.java"; then
-    echo "    [✓] LC0338_CountingBits.java is already committed in git repository."
+# --- LC0336 Palindrome Pairs ---
+FILE="staging/day6/LC0336_PalindromePairs.java"
+if git ls-files --error-unmatch "$FILE" > /dev/null 2>&1; then
+  echo "SKIP: LC0336 Palindrome Pairs already committed."
 else
-    cp "staging/day6/LC0338_CountingBits.java" "./LC0338_CountingBits.java"
-    git add "LC0338_CountingBits.java"
-    git commit -m "feat(leetcode): solve LC0338 Counting Bits in Java"
-    echo "    [+] Committed [6/6]: LC0338 Counting Bits"
-    command -v sleep >/dev/null 2>&1 && sleep 2 || true
+  git add "$FILE"
+  git commit -m "feat(leetcode): solve LC0336 Palindrome Pairs in Java"
+  echo "COMMITTED: LC0336 Palindrome Pairs"
 fi
 
-echo "================================================================"
-echo "[*] Day 6 commits recorded! Pushing to GitHub..."
-echo "================================================================"
-git push origin main || git push
-
-echo ""
-echo "🎉 [SUCCESS] Day 6 complete! 6 contributions pushed to GitHub."
-echo "================================================================"
+git push origin main
+echo "=== Day 6 push complete ==="

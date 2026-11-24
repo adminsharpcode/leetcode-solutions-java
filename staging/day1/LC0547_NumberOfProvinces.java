@@ -1,20 +1,44 @@
+/**
+ * Problem: 547. Number of Provinces
+ * Difficulty: Medium
+ * Category: Depth-First Search, Breadth-First Search, Union Find, Graph
+ *
+ * Algorithm:
+ * Disjoint Set Union (DSU) or standard visited DFS over n cities.
+ * For each city, if not visited, launch DFS to mark all transitively connected cities.
+ * Increment province counter per connected component.
+ *
+ * Time Complexity: O(N^2)
+ * Space Complexity: O(N)
+ */
 public class LC0547_NumberOfProvinces {
-    int[] parent;
+
     public int findCircleNum(int[][] isConnected) {
         int n = isConnected.length;
-        parent = new int[n];
-        for (int i = 0; i < n; i++) parent[i] = i;
-        for (int i = 0; i < n; i++)
-            for (int j = i+1; j < n; j++)
-                if (isConnected[i][j] == 1) union(i, j);
+        boolean[] visited = new boolean[n];
         int count = 0;
-        for (int i = 0; i < n; i++) if (find(i) == i) count++;
+
+        for (int i = 0; i < n; i++) {
+            if (!visited[i]) {
+                dfs(isConnected, visited, i, n);
+                count++;
+            }
+        }
         return count;
     }
-    int find(int x) { return parent[x] == x ? x : (parent[x] = find(parent[x])); }
-    void union(int a, int b) { parent[find(a)] = find(b); }
+
+    private void dfs(int[][] matrix, boolean[] visited, int i, int n) {
+        visited[i] = true;
+        for (int j = 0; j < n; j++) {
+            if (matrix[i][j] == 1 && !visited[j]) {
+                dfs(matrix, visited, j, n);
+            }
+        }
+    }
+
     public static void main(String[] args) {
         LC0547_NumberOfProvinces sol = new LC0547_NumberOfProvinces();
-        System.out.println(sol.findCircleNum(new int[][]{{1,1,0},{1,1,0},{0,0,1}})); // 2
+        int[][] conn = {{1,1,0},{1,1,0},{0,0,1}};
+        System.out.println("Provinces: " + sol.findCircleNum(conn)); // 2
     }
 }

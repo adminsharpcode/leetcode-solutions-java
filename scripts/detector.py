@@ -7,7 +7,6 @@ which staging problems are pending, and optionally runs the next daily batch.
 import os
 import sys
 import subprocess
-import re
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
@@ -71,14 +70,9 @@ def report_status():
 
 def run_day(day_num):
     day_script = os.path.join(ROOT, f"day{day_num}.sh")
-    if sys.platform == "win32":
-        # In windows shell, execute via bash or python equivalent
-        bash_path = "bash"
-        cmd = [bash_path, day_script]
-        print(f"[*] Executing Day {day_num} via bash...")
-        subprocess.run(cmd, check=True)
-    else:
-        subprocess.run(["bash", day_script], check=True)
+    cmd = ["sh", day_script]
+    print(f"[*] Executing Day {day_num} via sh...")
+    subprocess.run(cmd, check=True)
 
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] in ("--run-next", "-r", "auto"):

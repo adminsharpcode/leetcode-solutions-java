@@ -1,23 +1,41 @@
 import java.util.*;
+
+/**
+ * Problem: 85. Maximal Rectangle
+ * Difficulty: Hard
+ * Category: Array, Dynamic Programming, Stack, Matrix, Monotonic Stack
+ *
+ * Algorithm:
+ * Maintain running histogram heights row by row.
+ * For each row, calculate largest rectangle in histogram via Monotonic Stack in O(N).
+ *
+ * Time Complexity: O(M * N)
+ * Space Complexity: O(N)
+ */
 public class LC0085_MaximalRectangle {
+
     public int maximalRectangle(char[][] matrix) {
-        if (matrix.length == 0) return 0;
-        int n = matrix[0].length, max = 0;
-        int[] heights = new int[n];
+        if (matrix == null || matrix.length == 0) return 0;
+        int cols = matrix[0].length;
+        int[] heights = new int[cols];
+        int maxArea = 0;
+
         for (char[] row : matrix) {
-            for (int j = 0; j < n; j++)
+            for (int j = 0; j < cols; j++) {
                 heights[j] = row[j] == '1' ? heights[j] + 1 : 0;
-            max = Math.max(max, largestRect(heights));
+            }
+            maxArea = Math.max(maxArea, largestHistogram(heights));
         }
-        return max;
+        return maxArea;
     }
-    private int largestRect(int[] h) {
+
+    private int largestHistogram(int[] heights) {
         Deque<Integer> stack = new ArrayDeque<>();
         int max = 0;
-        for (int i = 0; i <= h.length; i++) {
-            int cur = (i == h.length) ? 0 : h[i];
-            while (!stack.isEmpty() && h[stack.peek()] > cur) {
-                int height = h[stack.pop()];
+        for (int i = 0; i <= heights.length; i++) {
+            int h = (i == heights.length) ? 0 : heights[i];
+            while (!stack.isEmpty() && heights[stack.peek()] > h) {
+                int height = heights[stack.pop()];
                 int width = stack.isEmpty() ? i : i - stack.peek() - 1;
                 max = Math.max(max, height * width);
             }
@@ -25,9 +43,15 @@ public class LC0085_MaximalRectangle {
         }
         return max;
     }
+
     public static void main(String[] args) {
         LC0085_MaximalRectangle sol = new LC0085_MaximalRectangle();
-        char[][] m = {{'1','0','1','0','0'},{'1','0','1','1','1'},{'1','1','1','1','1'},{'1','0','0','1','0'}};
-        System.out.println(sol.maximalRectangle(m)); // 6
+        char[][] mat = {
+            {'1','0','1','0','0'},
+            {'1','0','1','1','1'},
+            {'1','1','1','1','1'},
+            {'1','0','0','1','0'}
+        };
+        System.out.println("Maximal Rectangle: " + sol.maximalRectangle(mat)); // 6
     }
 }

@@ -1,6 +1,6 @@
 # LeetCode Solutions in Java 🚀
 
-A curated collection of **137 comprehensive, production-grade Java solutions** to top LeetCode algorithm and data structure problems. Each solution includes problem statement references, algorithmic breakdowns, Big-O time and space complexity analyses, and self-contained executable `main()` test cases.
+A curated collection of **143 comprehensive, production-grade Java solutions** to top LeetCode algorithm and data structure problems. Each solution includes problem statement references, algorithmic breakdowns, Big-O time and space complexity analyses, and self-contained executable `main()` test cases.
 
 ---
 
@@ -25,7 +25,7 @@ To check current progress without submitting:
 
 ---
 
-## 📋 Problem Catalog (137 Solutions)
+## 📋 Problem Catalog (143 Solutions)
 
 | # | Problem ID | Title | Difficulty | Category / Pattern | Time Complexity | Space Complexity | Solution File |
 |---|---|---|---|---|---|---|---|
@@ -113,59 +113,65 @@ To check current progress without submitting:
 | 82 | 121 | BestTimeToBuyAndSellStock | 🟢 Easy | Algorithms | $O(N)$ | $O(1)$ | [`LC0121_BestTimeToBuyAndSellStock.java`](./LC0121_BestTimeToBuyAndSellStock.java) |
 | 83 | 124 | BinaryTreeMaximumPathSum | 🔴 Hard | Algorithms | $O(N)$ | $O(H)$ recursion height | [`LC0124_BinaryTreeMaximumPathSum.java`](./LC0124_BinaryTreeMaximumPathSum.java) |
 | 84 | 125 | Valid Palindrome | 🟢 Easy | Two Pointers, String | $O(N)$ | $O(1)$ | [`LC0125_ValidPalindrome.java`](./LC0125_ValidPalindrome.java) |
-| 85 | 128 | LongestConsecutiveSequence | 🟡 Medium | Algorithms | $O(N)$ | $O(N)$ | [`LC0128_LongestConsecutiveSequence.java`](./LC0128_LongestConsecutiveSequence.java) |
-| 86 | 129 | Sum Root to Leaf Numbers | 🟡 Medium | Tree, Depth-First Search, Binary Tree | $O(N)$ | $O(H)$ | [`LC0129_SumRootToLeafNumbers.java`](./LC0129_SumRootToLeafNumbers.java) |
-| 87 | 133 | CloneGraph | 🟡 Medium | Algorithms | $O(V + E)$ | $O(V)$ | [`LC0133_CloneGraph.java`](./LC0133_CloneGraph.java) |
-| 88 | 134 | Gas Station | 🟡 Medium | Array, Greedy | $O(N)$ | $O(1)$ | [`LC0134_GasStation.java`](./LC0134_GasStation.java) |
-| 89 | 138 | CopyListWithRandomPointer | 🟡 Medium | Algorithms | $O(N)$ | $O(1)$ | [`LC0138_CopyListWithRandomPointer.java`](./LC0138_CopyListWithRandomPointer.java) |
-| 90 | 139 | WordBreak | 🟡 Medium | Algorithms | $O(N^3)$ (string substring hashing)$ | $O(N + M)$ | [`LC0139_WordBreak.java`](./LC0139_WordBreak.java) |
-| 91 | 141 | LinkedListCycle | 🟢 Easy | Algorithms | $O(N)$ | $O(1)$ | [`LC0141_LinkedListCycle.java`](./LC0141_LinkedListCycle.java) |
-| 92 | 142 | LinkedListCycleII | 🟡 Medium | Algorithms | $O(N)$ | $O(1)$ | [`LC0142_LinkedListCycleII.java`](./LC0142_LinkedListCycleII.java) |
-| 93 | 143 | ReorderList | 🟡 Medium | Algorithms | $O(N)$ | $O(1)$ | [`LC0143_ReorderList.java`](./LC0143_ReorderList.java) |
-| 94 | 146 | LRUCache | 🟡 Medium | Algorithms | $O(1)$ for both get and put | $O(capacity)$ | [`LC0146_LRUCache.java`](./LC0146_LRUCache.java) |
-| 95 | 150 | EvaluateReversePolishNotation | 🟡 Medium | Algorithms | $O(N)$ | $O(N)$ | [`LC0150_EvaluateReversePolishNotation.java`](./LC0150_EvaluateReversePolishNotation.java) |
-| 96 | 152 | MaximumProductSubarray | 🟡 Medium | Algorithms | $O(N)$ | $O(1)$ | [`LC0152_MaximumProductSubarray.java`](./LC0152_MaximumProductSubarray.java) |
-| 97 | 153 | FindMinimumInRotatedSortedArray | 🟡 Medium | Algorithms | $O(log N)$ | $O(1)$ | [`LC0153_FindMinimumInRotatedSortedArray.java`](./LC0153_FindMinimumInRotatedSortedArray.java) |
-| 98 | 155 | MinStack | 🟡 Medium | Algorithms | $O(1)$ for all operations | $O(N)$ | [`LC0155_MinStack.java`](./LC0155_MinStack.java) |
-| 99 | 160 | Intersection of Two Linked Lists | 🟢 Easy | Linked List, Two Pointers | $O(N + M)$ | $O(1)$ | [`LC0160_IntersectionOfTwoLinkedLists.java`](./LC0160_IntersectionOfTwoLinkedLists.java) |
-| 100 | 162 | Find Peak Element | 🟡 Medium | Array, Binary Search | $O(log N)$ | $O(1)$ | [`LC0162_FindPeakElement.java`](./LC0162_FindPeakElement.java) |
-| 101 | 167 | TwoSumIIInputArrayIsSorted | 🟡 Medium | Algorithms | $O(N)$ | $O(1)$ | [`LC0167_TwoSumIIInputArrayIsSorted.java`](./LC0167_TwoSumIIInputArrayIsSorted.java) |
-| 102 | 189 | RotateArray | 🟡 Medium | Algorithms | $O(N)$ | $O(1)$ | [`LC0189_RotateArray.java`](./LC0189_RotateArray.java) |
-| 103 | 198 | HouseRobber | 🟡 Medium | Algorithms | $O(N)$ | $O(1)$ | [`LC0198_HouseRobber.java`](./LC0198_HouseRobber.java) |
-| 104 | 199 | Binary Tree Right Side View | 🟡 Medium | Tree, Depth-First Search, Breadth-First Search, Binary Tree | $O(N)$ | $O(D)$ where D is max diameter of tree | [`LC0199_BinaryTreeRightSideView.java`](./LC0199_BinaryTreeRightSideView.java) |
-| 105 | 200 | NumberOfIslands | 🟡 Medium | Algorithms | $O(M * N)$ | $O(M * N)$ worst-case recursion stack | [`LC0200_NumberOfIslands.java`](./LC0200_NumberOfIslands.java) |
-| 106 | 202 | Happy Number | 🟢 Easy | Hash Table, Math, Two Pointers | $O(log N)$ | $O(1)$ with Floyd's algorithm | [`LC0202_HappyNumber.java`](./LC0202_HappyNumber.java) |
-| 107 | 203 | Remove Linked List Elements | 🟢 Easy | Linked List, Recursion | $O(N)$ | $O(1)$ | [`LC0203_RemoveLinkedListElements.java`](./LC0203_RemoveLinkedListElements.java) |
-| 108 | 206 | ReverseLinkedList | 🟢 Easy | Algorithms | $O(N)$ | $O(1)$ | [`LC0206_ReverseLinkedList.java`](./LC0206_ReverseLinkedList.java) |
-| 109 | 207 | CourseSchedule | 🟡 Medium | Algorithms | $O(V + E)$ | $O(V + E)$ | [`LC0207_CourseSchedule.java`](./LC0207_CourseSchedule.java) |
-| 110 | 208 | ImplementTrie | 🟡 Medium | Algorithms | $O(L)$ for insert, search, and startsWith (L = word length)$ | $O(Total inserted characters * 26)$ | [`LC0208_ImplementTrie.java`](./LC0208_ImplementTrie.java) |
-| 111 | 209 | Minimum Size Subarray Sum | 🟡 Medium | Array, Binary Search, Sliding Window | $O(N)$ | $O(1)$ | [`LC0209_MinimumSizeSubarraySum.java`](./LC0209_MinimumSizeSubarraySum.java) |
-| 112 | 210 | CourseScheduleII | 🟡 Medium | Algorithms | $O(V + E)$ | $O(V + E)$ | [`LC0210_CourseScheduleII.java`](./LC0210_CourseScheduleII.java) |
-| 113 | 213 | House Robber II | 🟡 Medium | Array, Dynamic Programming | $O(N)$ | $O(1)$ | [`LC0213_HouseRobberII.java`](./LC0213_HouseRobberII.java) |
-| 114 | 215 | KthLargestElementInAnArray | 🟡 Medium | Algorithms | $O(N log K)$ | $O(K)$ | [`LC0215_KthLargestElementInAnArray.java`](./LC0215_KthLargestElementInAnArray.java) |
-| 115 | 225 | ImplementStackUsingQueues | 🟢 Easy | Algorithms | push: $O(N)$, pop/top/empty: $O(1)$ | $O(N)$ | [`LC0225_ImplementStackUsingQueues.java`](./LC0225_ImplementStackUsingQueues.java) |
-| 116 | 226 | InvertBinaryTree | 🟢 Easy | Algorithms | $O(N)$ | $O(H)$ where H is tree height | [`LC0226_InvertBinaryTree.java`](./LC0226_InvertBinaryTree.java) |
-| 117 | 230 | KthSmallestElementInABST | 🟡 Medium | Algorithms | $O(H + K)$ | $O(H)$ where H is tree height | [`LC0230_KthSmallestElementInABST.java`](./LC0230_KthSmallestElementInABST.java) |
-| 118 | 232 | ImplementQueueUsingStacks | 🟢 Easy | Algorithms | Amortized $O(1)$ for pop and peek, $O(1)$ for push | $O(N)$ | [`LC0232_ImplementQueueUsingStacks.java`](./LC0232_ImplementQueueUsingStacks.java) |
-| 119 | 234 | PalindromeLinkedList | 🟢 Easy | Algorithms | $O(N)$ | $O(1)$ | [`LC0234_PalindromeLinkedList.java`](./LC0234_PalindromeLinkedList.java) |
-| 120 | 236 | LowestCommonAncestorOfABinaryTree | 🟡 Medium | Algorithms | $O(N)$ | $O(H)$ where H is tree height | [`LC0236_LowestCommonAncestorOfABinaryTree.java`](./LC0236_LowestCommonAncestorOfABinaryTree.java) |
-| 121 | 238 | ProductOfArrayExceptSelf | 🟡 Medium | Algorithms | $O(N)$ | $O(1)$ auxiliary space (output array does not count toward memory)$ | [`LC0238_ProductOfArrayExceptSelf.java`](./LC0238_ProductOfArrayExceptSelf.java) |
-| 122 | 240 | SearchA2DMatrixII | 🟡 Medium | Algorithms | $O(M + N)$ | $O(1)$ | [`LC0240_SearchA2DMatrixII.java`](./LC0240_SearchA2DMatrixII.java) |
-| 123 | 242 | Valid Anagram | 🟢 Easy | Hash Table, String, Sorting | $O(N)$ | $O(1)$ (fixed 26-element array)$ | [`LC0242_ValidAnagram.java`](./LC0242_ValidAnagram.java) |
-| 124 | 278 | First Bad Version | 🟢 Easy | Binary Search, Interactive | $O(log N)$ | $O(1)$ | [`LC0278_FirstBadVersion.java`](./LC0278_FirstBadVersion.java) |
-| 125 | 279 | Perfect Squares | 🟡 Medium | Math, Dynamic Programming, Breadth-First Search | $O(N * sqrt(N)$)$ | $O(N)$ | [`LC0279_PerfectSquares.java`](./LC0279_PerfectSquares.java) |
-| 126 | 283 | Move Zeroes | 🟢 Easy | Array, Two Pointers | $O(N)$ | $O(1)$ | [`LC0283_MoveZeroes.java`](./LC0283_MoveZeroes.java) |
-| 127 | 295 | Find Median from Data Stream | 🔴 Hard | Two Heaps, Design, Data Stream | addNum: $O(log N)$, findMedian: $O(1)$ | $O(N)$ | [`LC0295_FindMedianFromDataStream.java`](./LC0295_FindMedianFromDataStream.java) |
-| 128 | 300 | LongestIncreasingSubsequence | 🟡 Medium | Algorithms | $O(N log N)$ | $O(N)$ | [`LC0300_LongestIncreasingSubsequence.java`](./LC0300_LongestIncreasingSubsequence.java) |
-| 129 | 322 | CoinChange | 🟡 Medium | Algorithms | $O(Amount * Coins.length)$ | $O(Amount)$ | [`LC0322_CoinChange.java`](./LC0322_CoinChange.java) |
-| 130 | 338 | Counting Bits | 🟢 Easy | Dynamic Programming, Bit Manipulation | $O(N)$ | $O(1)$ auxiliary (excluding output array)$ | [`LC0338_CountingBits.java`](./LC0338_CountingBits.java) |
-| 131 | 347 | TopKFrequentElements | 🟡 Medium | Algorithms | $O(N log K)$ | $O(N + K)$ | [`LC0347_TopKFrequentElements.java`](./LC0347_TopKFrequentElements.java) |
-| 132 | 373 | FindKPairsWithSmallestSums | 🟡 Medium | Algorithms | $O(K log(min(N, K)$)$)$ | $O(min(N, K)$)$ | [`LC0373_FindKPairsWithSmallestSums.java`](./LC0373_FindKPairsWithSmallestSums.java) |
-| 133 | 416 | PartitionEqualSubsetSum | 🟡 Medium | Algorithms | $O(N * Target)$ | $O(Target)$ | [`LC0416_PartitionEqualSubsetSum.java`](./LC0416_PartitionEqualSubsetSum.java) |
-| 134 | 424 | LongestRepeatingCharacterReplacement | 🟡 Medium | Algorithms | $O(N)$ | $O(1)$ (26 uppercase English letters)$ | [`LC0424_LongestRepeatingCharacterReplacement.java`](./LC0424_LongestRepeatingCharacterReplacement.java) |
-| 135 | 435 | NonOverlappingIntervals | 🟡 Medium | Algorithms | $O(N log N)$ | $O(1)$ | [`LC0435_NonOverlappingIntervals.java`](./LC0435_NonOverlappingIntervals.java) |
-| 136 | 704 | Binary Search | 🟢 Easy | Array, Binary Search | $O(log N)$ | $O(1)$ | [`LC0704_BinarySearch.java`](./LC0704_BinarySearch.java) |
-| 137 | 875 | Koko Eating Bananas | 🟡 Medium | Array, Binary Search on Answer | $O(N * log(max(piles)$)$)$ | $O(1)$ | [`LC0875_KokoEatingBananas.java`](./LC0875_KokoEatingBananas.java) |
+| 85 | 127 | Word Ladder | 🔴 Hard | Breadth-First Search, Hash Table, String | $O(M^2 * N)$ where M is word length and N is word list size | $O(M * N)$ | [`LC0127_WordLadder.java`](./LC0127_WordLadder.java) |
+| 86 | 128 | LongestConsecutiveSequence | 🟡 Medium | Algorithms | $O(N)$ | $O(N)$ | [`LC0128_LongestConsecutiveSequence.java`](./LC0128_LongestConsecutiveSequence.java) |
+| 87 | 129 | Sum Root to Leaf Numbers | 🟡 Medium | Tree, Depth-First Search, Binary Tree | $O(N)$ | $O(H)$ | [`LC0129_SumRootToLeafNumbers.java`](./LC0129_SumRootToLeafNumbers.java) |
+| 88 | 130 | Surrounded Regions | 🟡 Medium | Depth-First Search, Breadth-First Search, Matrix | $O(M * N)$ | $O(M * N)$ recursion stack | [`LC0130_SurroundedRegions.java`](./LC0130_SurroundedRegions.java) |
+| 89 | 133 | CloneGraph | 🟡 Medium | Algorithms | $O(V + E)$ | $O(V)$ | [`LC0133_CloneGraph.java`](./LC0133_CloneGraph.java) |
+| 90 | 134 | Gas Station | 🟡 Medium | Array, Greedy | $O(N)$ | $O(1)$ | [`LC0134_GasStation.java`](./LC0134_GasStation.java) |
+| 91 | 138 | CopyListWithRandomPointer | 🟡 Medium | Algorithms | $O(N)$ | $O(1)$ | [`LC0138_CopyListWithRandomPointer.java`](./LC0138_CopyListWithRandomPointer.java) |
+| 92 | 139 | WordBreak | 🟡 Medium | Algorithms | $O(N^3)$ (string substring hashing)$ | $O(N + M)$ | [`LC0139_WordBreak.java`](./LC0139_WordBreak.java) |
+| 93 | 141 | LinkedListCycle | 🟢 Easy | Algorithms | $O(N)$ | $O(1)$ | [`LC0141_LinkedListCycle.java`](./LC0141_LinkedListCycle.java) |
+| 94 | 142 | LinkedListCycleII | 🟡 Medium | Algorithms | $O(N)$ | $O(1)$ | [`LC0142_LinkedListCycleII.java`](./LC0142_LinkedListCycleII.java) |
+| 95 | 143 | ReorderList | 🟡 Medium | Algorithms | $O(N)$ | $O(1)$ | [`LC0143_ReorderList.java`](./LC0143_ReorderList.java) |
+| 96 | 146 | LRUCache | 🟡 Medium | Algorithms | $O(1)$ for both get and put | $O(capacity)$ | [`LC0146_LRUCache.java`](./LC0146_LRUCache.java) |
+| 97 | 150 | EvaluateReversePolishNotation | 🟡 Medium | Algorithms | $O(N)$ | $O(N)$ | [`LC0150_EvaluateReversePolishNotation.java`](./LC0150_EvaluateReversePolishNotation.java) |
+| 98 | 152 | MaximumProductSubarray | 🟡 Medium | Algorithms | $O(N)$ | $O(1)$ | [`LC0152_MaximumProductSubarray.java`](./LC0152_MaximumProductSubarray.java) |
+| 99 | 153 | FindMinimumInRotatedSortedArray | 🟡 Medium | Algorithms | $O(log N)$ | $O(1)$ | [`LC0153_FindMinimumInRotatedSortedArray.java`](./LC0153_FindMinimumInRotatedSortedArray.java) |
+| 100 | 155 | MinStack | 🟡 Medium | Algorithms | $O(1)$ for all operations | $O(N)$ | [`LC0155_MinStack.java`](./LC0155_MinStack.java) |
+| 101 | 160 | Intersection of Two Linked Lists | 🟢 Easy | Linked List, Two Pointers | $O(N + M)$ | $O(1)$ | [`LC0160_IntersectionOfTwoLinkedLists.java`](./LC0160_IntersectionOfTwoLinkedLists.java) |
+| 102 | 162 | Find Peak Element | 🟡 Medium | Array, Binary Search | $O(log N)$ | $O(1)$ | [`LC0162_FindPeakElement.java`](./LC0162_FindPeakElement.java) |
+| 103 | 167 | TwoSumIIInputArrayIsSorted | 🟡 Medium | Algorithms | $O(N)$ | $O(1)$ | [`LC0167_TwoSumIIInputArrayIsSorted.java`](./LC0167_TwoSumIIInputArrayIsSorted.java) |
+| 104 | 189 | RotateArray | 🟡 Medium | Algorithms | $O(N)$ | $O(1)$ | [`LC0189_RotateArray.java`](./LC0189_RotateArray.java) |
+| 105 | 198 | HouseRobber | 🟡 Medium | Algorithms | $O(N)$ | $O(1)$ | [`LC0198_HouseRobber.java`](./LC0198_HouseRobber.java) |
+| 106 | 199 | Binary Tree Right Side View | 🟡 Medium | Tree, Depth-First Search, Breadth-First Search, Binary Tree | $O(N)$ | $O(D)$ where D is max diameter of tree | [`LC0199_BinaryTreeRightSideView.java`](./LC0199_BinaryTreeRightSideView.java) |
+| 107 | 200 | NumberOfIslands | 🟡 Medium | Algorithms | $O(M * N)$ | $O(M * N)$ worst-case recursion stack | [`LC0200_NumberOfIslands.java`](./LC0200_NumberOfIslands.java) |
+| 108 | 202 | Happy Number | 🟢 Easy | Hash Table, Math, Two Pointers | $O(log N)$ | $O(1)$ with Floyd's algorithm | [`LC0202_HappyNumber.java`](./LC0202_HappyNumber.java) |
+| 109 | 203 | Remove Linked List Elements | 🟢 Easy | Linked List, Recursion | $O(N)$ | $O(1)$ | [`LC0203_RemoveLinkedListElements.java`](./LC0203_RemoveLinkedListElements.java) |
+| 110 | 206 | ReverseLinkedList | 🟢 Easy | Algorithms | $O(N)$ | $O(1)$ | [`LC0206_ReverseLinkedList.java`](./LC0206_ReverseLinkedList.java) |
+| 111 | 207 | CourseSchedule | 🟡 Medium | Algorithms | $O(V + E)$ | $O(V + E)$ | [`LC0207_CourseSchedule.java`](./LC0207_CourseSchedule.java) |
+| 112 | 208 | ImplementTrie | 🟡 Medium | Algorithms | $O(L)$ for insert, search, and startsWith (L = word length)$ | $O(Total inserted characters * 26)$ | [`LC0208_ImplementTrie.java`](./LC0208_ImplementTrie.java) |
+| 113 | 209 | Minimum Size Subarray Sum | 🟡 Medium | Array, Binary Search, Sliding Window | $O(N)$ | $O(1)$ | [`LC0209_MinimumSizeSubarraySum.java`](./LC0209_MinimumSizeSubarraySum.java) |
+| 114 | 210 | CourseScheduleII | 🟡 Medium | Algorithms | $O(V + E)$ | $O(V + E)$ | [`LC0210_CourseScheduleII.java`](./LC0210_CourseScheduleII.java) |
+| 115 | 213 | House Robber II | 🟡 Medium | Array, Dynamic Programming | $O(N)$ | $O(1)$ | [`LC0213_HouseRobberII.java`](./LC0213_HouseRobberII.java) |
+| 116 | 215 | KthLargestElementInAnArray | 🟡 Medium | Algorithms | $O(N log K)$ | $O(K)$ | [`LC0215_KthLargestElementInAnArray.java`](./LC0215_KthLargestElementInAnArray.java) |
+| 117 | 225 | ImplementStackUsingQueues | 🟢 Easy | Algorithms | push: $O(N)$, pop/top/empty: $O(1)$ | $O(N)$ | [`LC0225_ImplementStackUsingQueues.java`](./LC0225_ImplementStackUsingQueues.java) |
+| 118 | 226 | InvertBinaryTree | 🟢 Easy | Algorithms | $O(N)$ | $O(H)$ where H is tree height | [`LC0226_InvertBinaryTree.java`](./LC0226_InvertBinaryTree.java) |
+| 119 | 230 | KthSmallestElementInABST | 🟡 Medium | Algorithms | $O(H + K)$ | $O(H)$ where H is tree height | [`LC0230_KthSmallestElementInABST.java`](./LC0230_KthSmallestElementInABST.java) |
+| 120 | 232 | ImplementQueueUsingStacks | 🟢 Easy | Algorithms | Amortized $O(1)$ for pop and peek, $O(1)$ for push | $O(N)$ | [`LC0232_ImplementQueueUsingStacks.java`](./LC0232_ImplementQueueUsingStacks.java) |
+| 121 | 234 | PalindromeLinkedList | 🟢 Easy | Algorithms | $O(N)$ | $O(1)$ | [`LC0234_PalindromeLinkedList.java`](./LC0234_PalindromeLinkedList.java) |
+| 122 | 236 | LowestCommonAncestorOfABinaryTree | 🟡 Medium | Algorithms | $O(N)$ | $O(H)$ where H is tree height | [`LC0236_LowestCommonAncestorOfABinaryTree.java`](./LC0236_LowestCommonAncestorOfABinaryTree.java) |
+| 123 | 238 | ProductOfArrayExceptSelf | 🟡 Medium | Algorithms | $O(N)$ | $O(1)$ auxiliary space (output array does not count toward memory)$ | [`LC0238_ProductOfArrayExceptSelf.java`](./LC0238_ProductOfArrayExceptSelf.java) |
+| 124 | 240 | SearchA2DMatrixII | 🟡 Medium | Algorithms | $O(M + N)$ | $O(1)$ | [`LC0240_SearchA2DMatrixII.java`](./LC0240_SearchA2DMatrixII.java) |
+| 125 | 242 | Valid Anagram | 🟢 Easy | Hash Table, String, Sorting | $O(N)$ | $O(1)$ (fixed 26-element array)$ | [`LC0242_ValidAnagram.java`](./LC0242_ValidAnagram.java) |
+| 126 | 261 | Graph Valid Tree | 🟡 Medium | Graph, Union Find, Breadth-First Search | $O(N * alpha(N)$)$ | $O(N)$ | [`LC0261_GraphValidTree.java`](./LC0261_GraphValidTree.java) |
+| 127 | 278 | First Bad Version | 🟢 Easy | Binary Search, Interactive | $O(log N)$ | $O(1)$ | [`LC0278_FirstBadVersion.java`](./LC0278_FirstBadVersion.java) |
+| 128 | 279 | Perfect Squares | 🟡 Medium | Math, Dynamic Programming, Breadth-First Search | $O(N * sqrt(N)$)$ | $O(N)$ | [`LC0279_PerfectSquares.java`](./LC0279_PerfectSquares.java) |
+| 129 | 283 | Move Zeroes | 🟢 Easy | Array, Two Pointers | $O(N)$ | $O(1)$ | [`LC0283_MoveZeroes.java`](./LC0283_MoveZeroes.java) |
+| 130 | 295 | Find Median from Data Stream | 🔴 Hard | Two Heaps, Design, Data Stream | addNum: $O(log N)$, findMedian: $O(1)$ | $O(N)$ | [`LC0295_FindMedianFromDataStream.java`](./LC0295_FindMedianFromDataStream.java) |
+| 131 | 300 | LongestIncreasingSubsequence | 🟡 Medium | Algorithms | $O(N log N)$ | $O(N)$ | [`LC0300_LongestIncreasingSubsequence.java`](./LC0300_LongestIncreasingSubsequence.java) |
+| 132 | 310 | Minimum Height Trees | 🟡 Medium | Tree, Breadth-First Search, Graph, Topological Sort | $O(V + E)$ | $O(V + E)$ | [`LC0310_MinimumHeightTrees.java`](./LC0310_MinimumHeightTrees.java) |
+| 133 | 322 | CoinChange | 🟡 Medium | Algorithms | $O(Amount * Coins.length)$ | $O(Amount)$ | [`LC0322_CoinChange.java`](./LC0322_CoinChange.java) |
+| 134 | 338 | Counting Bits | 🟢 Easy | Dynamic Programming, Bit Manipulation | $O(N)$ | $O(1)$ auxiliary (excluding output array)$ | [`LC0338_CountingBits.java`](./LC0338_CountingBits.java) |
+| 135 | 347 | TopKFrequentElements | 🟡 Medium | Algorithms | $O(N log K)$ | $O(N + K)$ | [`LC0347_TopKFrequentElements.java`](./LC0347_TopKFrequentElements.java) |
+| 136 | 373 | FindKPairsWithSmallestSums | 🟡 Medium | Algorithms | $O(K log(min(N, K)$)$)$ | $O(min(N, K)$)$ | [`LC0373_FindKPairsWithSmallestSums.java`](./LC0373_FindKPairsWithSmallestSums.java) |
+| 137 | 399 | Evaluate Division | 🟡 Medium | Graph, Depth-First Search, Breadth-First Search, Union Find | $O(Q * (V + E)$)$ | $O(V + E)$ | [`LC0399_EvaluateDivision.java`](./LC0399_EvaluateDivision.java) |
+| 138 | 416 | PartitionEqualSubsetSum | 🟡 Medium | Algorithms | $O(N * Target)$ | $O(Target)$ | [`LC0416_PartitionEqualSubsetSum.java`](./LC0416_PartitionEqualSubsetSum.java) |
+| 139 | 424 | LongestRepeatingCharacterReplacement | 🟡 Medium | Algorithms | $O(N)$ | $O(1)$ (26 uppercase English letters)$ | [`LC0424_LongestRepeatingCharacterReplacement.java`](./LC0424_LongestRepeatingCharacterReplacement.java) |
+| 140 | 435 | NonOverlappingIntervals | 🟡 Medium | Algorithms | $O(N log N)$ | $O(1)$ | [`LC0435_NonOverlappingIntervals.java`](./LC0435_NonOverlappingIntervals.java) |
+| 141 | 547 | Number of Provinces | 🟡 Medium | Depth-First Search, Breadth-First Search, Union Find, Graph | $O(N^2)$ | $O(N)$ | [`LC0547_NumberOfProvinces.java`](./LC0547_NumberOfProvinces.java) |
+| 142 | 704 | Binary Search | 🟢 Easy | Array, Binary Search | $O(log N)$ | $O(1)$ | [`LC0704_BinarySearch.java`](./LC0704_BinarySearch.java) |
+| 143 | 875 | Koko Eating Bananas | 🟡 Medium | Array, Binary Search on Answer | $O(N * log(max(piles)$)$)$ | $O(1)$ | [`LC0875_KokoEatingBananas.java`](./LC0875_KokoEatingBananas.java) |
 
 ---
 

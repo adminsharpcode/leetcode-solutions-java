@@ -133,7 +133,7 @@ javac *.java
 
 def update_travel_guide():
     print("[*] Updating TRAVEL_GUIDE.md...")
-    guide_content = """# 📱 Termux LeetCode Auto-Submissions Guide (Week 2)
+    guide_content = """# 📱 Termux LeetCode Auto-Submissions Guide (Week 3)
 
 This guide allows you to maintain your GitHub contribution streak effortlessly using Termux on your Android device while traveling.
 
@@ -169,83 +169,65 @@ If you ever want to see what has been submitted vs what is pending without runni
 ./run_day.sh status
 ```
 
-Example Output:
-```
-================================================================
-⚡ LeetCode Auto-Detector & Submission Engine
-================================================================
-[*] Total Java solutions currently active in root: 95
-----------------------------------------------------------------
-  [✓] Day 1: Completed (6/6 uploaded)
-  [ ] Day 2: Queued (0/6 uploaded)
-  [ ] Day 3: Queued (0/6 uploaded)
-  [ ] Day 4: Queued (0/6 uploaded)
-  [ ] Day 5: Queued (0/6 uploaded)
-  [ ] Day 6: Queued (0/6 uploaded)
-  [ ] Day 7: Queued (0/6 uploaded)
-----------------------------------------------------------------
-⚡ Next batch queued: DAY 2. Run './auto_submit.sh' to execute.
-```
-
 ---
 
-## 📅 Week 2 Catalog Breakdown (42 Brand New Java Solutions)
+## 📅 Week 3 Catalog Breakdown (42 Brand New Java Solutions)
 
-### 🟢 Day 1: Arrays, Two Pointers & In-Place Manipulations
-- `LC0018_4Sum.java` (Medium) — Two Pointers / 4-Sum
-- `LC0027_RemoveElement.java` (Easy) — Two Pointers Fast/Slow
-- `LC0080_RemoveDuplicatesFromSortedArrayII.java` (Medium) — In-Place Array Filter
-- `LC0088_MergeSortedArray.java` (Easy) — 3-Pointer Reverse Fill
-- `LC0209_MinimumSizeSubarraySum.java` (Medium) — Sliding Window
-- `LC0283_MoveZeroes.java` (Easy) — Two Pointers In-Place Swap
+### 🟢 Day 1: Graphs & BFS / Union Find
+- `LC0127_WordLadder.java` (Hard) — Breadth-First Search / Mutating Characters
+- `LC0130_SurroundedRegions.java` (Medium) — Boundary DFS In-Place Flood Fill
+- `LC0261_GraphValidTree.java` (Medium) — Disjoint Set Union (DSU) Cycle Detection
+- `LC0310_MinimumHeightTrees.java` (Medium) — BFS Topological Leaf Trimming
+- `LC0399_EvaluateDivision.java` (Medium) — Graph DFS Path Product
+- `LC0547_NumberOfProvinces.java` (Medium) — Connected Components DFS / DSU
 
-### 🟢 Day 2: Linked Lists & Two-Pointer Traversals
-- `LC0082_RemoveDuplicatesFromSortedListII.java` (Medium) — Sentinel Dummy Head
-- `LC0083_RemoveDuplicatesFromSortedList.java` (Easy) — Linked List Deduplication
-- `LC0086_PartitionList.java` (Medium) — Two Sublists Partitioning
-- `LC0092_ReverseLinkedListII.java` (Medium) — Subsegment Pointer Inversion
-- `LC0160_IntersectionOfTwoLinkedLists.java` (Easy) — Two Pointers Cycle/Intersection
-- `LC0203_RemoveLinkedListElements.java` (Easy) — Sentinel Node Deletion
+### 🟢 Day 2: Stack & Monotonic Stack
+- `LC0085_MaximalRectangle.java` (Hard) — Monotonic Stack on 2D Histogram Heights
+- `LC0316_RemoveDuplicateLetters.java` (Medium) — Greedy Monotonic Stack with Frequency Tracking
+- `LC0394_DecodeString.java` (Medium) — Dual Stacks (Multipliers & StringBuffers)
+- `LC0496_NextGreaterElementI.java` (Easy) — Monotonic Decreasing Stack + HashMap
+- `LC0503_NextGreaterElementII.java` (Medium) — Circular Monotonic Decreasing Index Stack
+- `LC0739_DailyTemperatures.java` (Medium) — Monotonic Decreasing Stack Index Spans
 
-### 🟢 Day 3: Strings & Parsing / Math
-- `LC0006_ZigzagConversion.java` (Medium) — Directional Simulation
-- `LC0012_IntegerToRoman.java` (Medium) — Greedy Value Extraction
-- `LC0013_RomanToInteger.java` (Easy) — Lookahead Subtraction
-- `LC0043_MultiplyStrings.java` (Medium) — Grade-School Multiplication
-- `LC0058_LengthOfLastWord.java` (Easy) — Backward Traversal
-- `LC0125_ValidPalindrome.java` (Easy) — Two Pointers Alpha-Numeric
+### 🟢 Day 3: Sliding Window & Two Pointers
+- `LC0030_SubstringConcatenation.java` (Hard) — Fixed-Length Sliding Window with Word Frequency Maps
+- `LC0159_LongestSubstringTwoDistinct.java` (Medium) — Dynamic Sliding Window with 2 Distinct Chars
+- `LC0239_SlidingWindowMaximum.java` (Hard) — Monotonic Decreasing Deque Window Bounds
+- `LC0567_PermutationInString.java` (Medium) — Fixed-Length Frequency Difference Window
+- `LC0632_SmallestRange.java` (Hard) — K-Pointer Min-Heap with Maximum Tracker
+- `LC0643_MaximumAverageSubarrayI.java` (Easy) — Fixed-Length Sliding Window Running Sum
 
-### 🟢 Day 4: Binary Search & Intervals
-- `LC0057_InsertInterval.java` (Medium) — 3-Stage Interval Merge
-- `LC0081_SearchInRotatedSortedArrayII.java` (Medium) — Rotated Search with Duplicates
-- `LC0162_FindPeakElement.java` (Medium) — Binary Search Slope Analysis
-- `LC0278_FirstBadVersion.java` (Easy) — Binary Search Boundary Condition
-- `LC0704_BinarySearch.java` (Easy) — Standard Closed-Range Binary Search
-- `LC0875_KokoEatingBananas.java` (Medium) — Binary Search on Answer
+### 🟢 Day 4: Bit Manipulation & Math
+- `LC0190_ReverseBits.java` (Easy) — 32-Bit Shift and Mask
+- `LC0191_NumberOf1Bits.java` (Easy) — Brian Kernighan's Bit Manipulation
+- `LC0231_PowerOfTwo.java` (Easy) — Single Set Bit Validation
+- `LC0260_SingleNumberIII.java` (Medium) — Two-Bucket Bit Partitioning by Lowest Diff Bit
+- `LC0268_MissingNumber.java` (Easy) — Gauss Formula / XOR Sum
+- `LC0371_SumOfTwoIntegers.java` (Medium) — Bitwise Adder Simulation (XOR & Carry Shift)
 
-### 🟢 Day 5: Trees & DFS/BFS
-- `LC0108_ConvertSortedArrayToBST.java` (Easy) — Divide and Conquer Height-Balanced BST
-- `LC0111_MinimumDepthOfBinaryTree.java` (Easy) — BFS Level-Order Shortest Path
-- `LC0112_PathSum.java` (Easy) — DFS Leaf Target Path
-- `LC0113_PathSumII.java` (Medium) — DFS Path Backtracking
-- `LC0129_SumRootToLeafNumbers.java` (Medium) — DFS Running Radix-10 Sum
-- `LC0199_BinaryTreeRightSideView.java` (Medium) — BFS Level-Order Rightmost Node
+### 🟢 Day 5: Dynamic Programming (2D & State Transitions)
+- `LC0097_InterleavingString.java` (Medium) — 2D Matrix Interleaving DP
+- `LC0115_DistinctSubsequences.java` (Hard) — 2D Subsequence Matching DP
+- `LC0132_PalindromePartitioningII.java` (Hard) — Palindrome Table + 1D Min-Cut DP
+- `LC0188_BestTimeToBuyAndSellStockIV.java` (Hard) — K-Transaction Buy/Sell DP
+- `LC0309_BestTimeCooldown.java` (Medium) — 3-State Finite State Machine DP (Held, Sold, Rest)
+- `LC0518_CoinChangeII.java` (Medium) — Unbounded Knapsack / Combinations DP
 
-### 🟢 Day 6: Dynamic Programming & Greedy
-- `LC0045_JumpGameII.java` (Medium) — Greedy BFS Boundary Intervals
-- `LC0063_UniquePathsII.java` (Medium) — 1D DP with Obstacles
-- `LC0134_GasStation.java` (Medium) — Greedy Circuit Deficit Tracking
-- `LC0213_HouseRobberII.java` (Medium) — Circular House Robber DP
-- `LC0279_PerfectSquares.java` (Medium) — Coin-Change Style DP
-- `LC0338_CountingBits.java` (Easy) — Bitwise DP Transition
+### 🟢 Day 6: Trie & String Algorithms
+- `LC0211_DesignAddSearchWords.java` (Medium) — 26-Way Trie with Recursive DFS Wildcard Matching
+- `LC0212_WordSearchII.java` (Hard) — 2D Grid DFS Backtracking over Prefix Trie
+- `LC0336_PalindromePairs.java` (Hard) — Reversed Prefix/Suffix Palindrome Matching
+- `LC0421_MaximumXOR.java` (Medium) — Bitwise Prefix Trie Greedy Bit Inversion
+- `LC0472_ConcatenatedWords.java` (Hard) — Dictionary Set + 1D DP Word Formation
+- `LC0648_ReplaceWords.java` (Medium) — Prefix Trie Shortest Root Substitution
 
-### 🟢 Day 7: Bit Manipulation, Backtracking & Heaps
-- `LC0029_DivideTwoIntegers.java` (Medium) — Exponential Bitwise Shifts
-- `LC0077_Combinations.java` (Medium) — Pruned Backtracking
-- `LC0090_SubsetsII.java` (Medium) — Backtracking with Duplicate Pruning
-- `LC0202_HappyNumber.java` (Easy) — Floyd's Cycle-Finding Algorithm
-- `LC0242_ValidAnagram.java` (Easy) — 26-Bucket Frequency Array
-- `LC0295_FindMedianFromDataStream.java` (Hard) — Balanced Dual-Heap (Min/Max Heap)
+### 🟢 Day 7: Advanced Trees & LCA
+- `LC0297_SerializeDeserializeBinaryTree.java` (Hard) — Preorder DFS with Null Sentinels
+- `LC0450_DeleteNodeInBST.java` (Medium) — BST Key Search + In-Order Successor Deletion
+- `LC0538_ConvertBSTToGreaterTree.java` (Medium) — Reverse In-Order DFS Accumulator
+- `LC0543_DiameterOfBinaryTree.java` (Easy) — Post-Order DFS Max Depth Span
+- `LC0572_SubtreeOfAnotherTree.java` (Easy) — Subtree Equality DFS Traversal
+- `LC0652_FindDuplicateSubtrees.java` (Medium) — Post-Order Serialization HashMap Deduplication
 
 ---
 
